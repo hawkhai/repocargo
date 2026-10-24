@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "version": "0.2.0",
+  "release_date": "2026-10-24",
+  "platform": "windows-x86_64",
+  "business_source_included": false,
+  "python_packaging": "PyInstaller onedir + PortaForge embedded",
+  "programs": {
+    "repocargo-cli.exe": {
+      "role": "Agent CLI",
+      "version": "0.2.0",
+      "sha256": "eef9091e8c673277d776a80c123372eb674c177748b363bf519b026372fe9f58",
+      "size_bytes": 1097216
+    },
+    "repocargo-fetch.exe": {
+      "role": "下载与部署",
+      "version": "0.2.0",
+      "sha256": "4ac25cb0ecc9491e3e1914a1027e3ec525c86239f4ca198b6d40d7bbf162ff2e",
+      "size_bytes": 2059264
+    },
+    "repocargo-lite.exe": {
+      "role": "Rust 精简版",
+      "version": "0.2.0",
+      "sha256": "434ee9d8befb69b45728b8646590d4d00ae988cee30a3d92c42215a7a185708b",
+      "size_bytes": 3794432
+    },
+    "repocargo.exe": {
+      "role": "Python 完整版",
+      "version": "0.2.0",
+      "sha256": "0e261ea679705a58c8109f128514703cb8f81888a3a21c8cff099cf2db2b97f9",
+      "size_bytes": 40610816
+    }
+  }
+}

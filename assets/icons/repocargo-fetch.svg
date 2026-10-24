@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <filter id="lift" x="-.3" y="-.3" width="1.6" height="1.7"><feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#8a4e00" flood-opacity=".26"/></filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffce46"/><stop offset="1" stop-color="#ff646c"/></linearGradient>
+    <linearGradient id="top" x2="1" y2="1"><stop stop-color="#fff78a"/><stop offset="1" stop-color="#ffda34"/></linearGradient>
+    <linearGradient id="left" x2="1" y2="1"><stop stop-color="#ffda48"/><stop offset="1" stop-color="#ff9b12"/></linearGradient>
+    <linearGradient id="right" x2="0" y2="1"><stop stop-color="#ffaf18"/><stop offset="1" stop-color="#ef710c"/></linearGradient>
+    <linearGradient id="accent" x2="1" y2="1"><stop stop-color="#ff9a24"/><stop offset="1" stop-color="#f34e14"/></linearGradient>
+  </defs>
+  <rect x="13" y="17" width="230" height="230" rx="55" fill="#3c5791" opacity=".18"/>
+  <rect x="13" y="11" width="230" height="230" rx="55" fill="url(#bg)" stroke="#fff1b8" stroke-width="2"/>
+  <path d="M32 119Q26 72 62 48" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".3"/>
+  <path d="m199 48 4 11 11 4-11 4-4 11-4-11-11-4 11-4Z" fill="#fff" opacity=".95"/>
+  <circle cx="48" cy="189" r="5" fill="#fff" opacity=".75"/>
+  <g filter="url(#lift)">
+  <path d="M52 79 116 43 180 79 116 115Z" fill="url(#top)"/>
+  <path d="M52 79 116 115V186L52 150Z" fill="url(#left)"/>
+  <path d="m116 115 64-36v71l-64 36Z" fill="url(#right)"/>
+  <path d="m82 62 17-10 64 36-17 10Z" fill="#fff9dc" opacity=".9"/>
+  <path d="m146 98 17-10v28l-17 10Z" fill="#fff0b5" opacity=".85"/>
+  <path d="M52 79 116 115 180 79M116 115V186" fill="none" stroke="#24436d" stroke-opacity=".16" stroke-width="2.5"/>
+  </g>
+  <path d="M48 44Q58 25 81 25" fill="none" stroke="#ffffff" stroke-opacity=".8" stroke-width="3" stroke-linecap="round"/>
+  <rect x="140" y="145" width="94" height="94" rx="29" fill="#372c74" opacity=".24"/>
+  <rect x="140" y="139" width="94" height="94" rx="29" fill="url(#accent)" stroke="#ffe6c0" stroke-opacity=".82" stroke-width="3"/>
+  <path d="M187 161v35m-13-13 13 13 13-13M165 204v10h44v-10" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-24",
+  "platform": "windows-x86_64",
+  "release_sha256": {
+    "repocargo-cli.exe": "eef9091e8c673277d776a80c123372eb674c177748b363bf519b026372fe9f58",
+    "repocargo-fetch.exe": "4ac25cb0ecc9491e3e1914a1027e3ec525c86239f4ca198b6d40d7bbf162ff2e",
+    "repocargo-lite.exe": "434ee9d8befb69b45728b8646590d4d00ae988cee30a3d92c42215a7a185708b",
+    "repocargo.exe": "0e261ea679705a58c8109f128514703cb8f81888a3a21c8cff099cf2db2b97f9"
+  },
+  "case_count": 45,
+  "passed": true,
+  "cases": [
+    {
+      "case": "artifact.hash.repocargo-cli.exe",
+      "passed": true
+    },
+    {
+      "case": "artifact.icons_identity.repocargo-cli.exe",
+      "passed": true,
+      "detail": {
+        "icon_sizes": [
+          16,
+          20,
+          24,
+          32,
+          40,
+          48,
+          64,
+          96,
+          128,
+          256
+        ],
+        "pe_machine": "0x8664"
+      }
+    },
+    {
+      "case": "startup.version.repocargo-cli.exe",
+      "passed": true
+    },
+    {
+      "case": "startup.help.repocargo-cli.exe",
+      "passed": true
+    },
+    {
+      "case": "arguments.unknown.repocargo-cli.exe",
+      "passed": true
+    },
+    {
+      "case": "arguments.no_command.repocargo-cli.exe",
+      "passed": true
+    },
+    {
+      "case": "artifact.hash.repocargo-fetch.exe",
+      "passed": true
+    },
+    {
+      "case": "artifact.icons_identity.repocargo-fetch.exe",
+      "passed": true,
+      "detail": {
+        "icon_sizes": [
+          16,
+          20,
+          24,
+          32,
+          40,
+          48,
+          64,
+          96,
+          128,
+          256
+        ],
+        "pe_machine": "0x8664"
+      }
+    },
+    {
+      "case": "startup.version.repocargo-fetch.exe",
+      "passed": true
+    },
+    {
+      "case": "startup.help.repocargo-fetch.exe",
+      "passed": true
+    },
+    {
+      "case": "arguments.unknown.repocargo-fetch.exe",
+      "passed": true
+    },
+    {
+      "case": "arguments.no_command.repocargo-fetch.exe",
+      "passed": true
+    },
+    {
+      "case": "artifact.hash.repocargo-lite.exe",
+      "passed": true
+    },
+    {
+      "case": "artifact.icons_identity.repocargo-lite.exe",
+      "passed": true,
+      "detail": {
+        "icon_sizes": [
+          16,
+          20,
+          24,
+          32,
+          40,
+          48,
+          64,
+          96,
+          128,
+          256
+        ],
+        "pe_machine": "0x8664"
+      }
+    },
+    {
+      "case": "startup.version.repocargo-lite.exe",
+      "passed": true
+    },
+    {
+      "case": "startup.help.repocargo-lite.exe",
+      "passed": true
+    },
+    {
+      "case": "arguments.unknown.repocargo-lite.exe",
+      "passed": true
+    },
+    {
+      "case": "arguments.no_command.repocargo-lite.exe",
+      "passed": true
+    },
+    {
+      "case": "artifact.hash.repocargo.exe",
+      "passed": true
+    },
+    {
+      "case": "artifact.icons_identity.repocargo.exe",
+      "passed": true,
+      "detail": {
+        "icon_sizes": [
+          16,
+          20,
+          24,
+          32,
+          40,
+          48,
+          64,
+          96,
+          128,
+          256
+        ],
+        "pe_machine": "0x14c"
+      }
+    },
+    {
+      "case": "startup.version.repocargo.exe",
+      "passed": true
+    },
+    {
+      "case": "startup.help.repocargo.exe",
+      "passed": true
+    },
+    {
+      "case": "arguments.unknown.repocargo.exe",
+      "passed": true
+    },
+    {
+      "case": "arguments.no_command.repocargo.exe",
+      "passed": true
+    },
+    {
+      "case": "plan.repocargo.exe.status",
+      "passed": true
+    },
+    {
+      "case": "plan.repocargo.exe.upload",
+      "passed": true
+    },
+    {
+      "case": "plan.repocargo.exe.download",
+      "passed": true
+    },
+    {
+      "case": "plan.repocargo.exe.clean",
+      "passed": true
+    },
+    {
+      "case": "plan.repocargo-lite.exe.status",
+      "passed": true
+    },
+    {
+      "case": "plan.repocargo-lite.exe.upload",
+      "passed": true
+    },
+    {
+      "case": "plan.repocargo-lite.exe.download",
+      "passed": true
+    },
+    {
+      "case": "plan.repocargo-lite.exe.clean",
+      "passed": true
+    },
+    {
+      "case": "plan.pagination",
+      "passed": true
+    },
+    {
+      "case": "plan.example_unchanged",
+      "passed": true
+    },
+    {
+      "case": "cli.exec_version",
+      "passed": true
+    },
+    {
+      "case": "coexistence.legacy_guard.repocargo.exe",
+      "passed": true
+    },
+    {
+      "case": "coexistence.legacy_guard.repocargo-lite.exe",
+      "passed": true
+    },
+    {
+      "case": "coexistence.legacy_guard.repocargo-cli.exe",
+      "passed": true
+    },
+    {
+      "case": "coexistence.legacy_guard.repocargo-fetch.exe",
+      "passed": true
+    },
+    {
+      "case": "fetch.http_download_and_deploy",
+      "passed": true
+    },
+    {
+      "case": "fetch.repeat_download",
+      "passed": true
+    },
+    {
+      "case": "fetch.corrupt_payload_preserves_old_state",
+      "passed": true
+    },
+    {
+      "case": "fetch.retry_verified_payload",
+      "passed": true
+    },
+    {
+      "case": "fetch.deployment_preflight",
+      "passed": true
+    },
+    {
+      "case": "fetch.reject_index_traversal",
+      "passed": true
+    }
+  ]
+}

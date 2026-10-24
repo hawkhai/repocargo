@@ -1,0 +1,2 @@
+Hello, RepoCargo!
+This is public demonstration data, not a production resource.

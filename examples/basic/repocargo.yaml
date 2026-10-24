@@ -1,0 +1,17 @@
+# 仅供离线 status / --dry-run；真实传输前改为自己的服务和账号。
+mainfile: repocargo.yaml
+mainroot: .
+others:
+  assets/: 示例资源
+upload: {}
+gitremote: demo-project
+submit_dir: release_001
+generate_listfile: true
+generate_versionfile: true
+generate_densefile: true
+densefile_ctrl: 524288
+ftpconfig:
+  host: ftp.example.invalid
+  port: 21
+  user: demo-user
+  pypass: REPOCARGO_FTP_PASSWORD

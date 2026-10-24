@@ -1,0 +1,1621 @@
+{
+  "schema_version": 1,
+  "components": [
+    {
+      "ecosystem": "Python",
+      "name": "altgraph",
+      "version": "0.17.4",
+      "license": "MIT",
+      "license_files": [
+        "third-party/licenses/python-altgraph-0.17.4/LICENSE"
+      ],
+      "upstream": "https://pypi.org/project/altgraph/0.17.4/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "Brotli",
+      "version": "1.1.0",
+      "license": "MIT",
+      "license_files": [
+        "third-party/licenses/python-brotli-1.1.0/LICENSE"
+      ],
+      "upstream": "https://pypi.org/project/Brotli/1.1.0/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "certifi",
+      "version": "2026.5.20",
+      "license": "MPL-2.0",
+      "license_files": [
+        "third-party/licenses/python-certifi-2026.5.20/LICENSE"
+      ],
+      "upstream": "https://pypi.org/project/certifi/2026.5.20/",
+      "source_distribution": {
+        "url": "https://files.pythonhosted.org/packages/f3/ce/ee2ecad540810a79593028e88299baeae54d346cc7a0d94b6199988b89b1/certifi-2026.5.20.tar.gz",
+        "sha256": "69dea482ab64caa7b9f6aba1c6bf48bb6a5448d1c0f1b17ab42ad8c763a5344d",
+        "file": "third-party/sources/certifi-2026.5.20.tar.gz"
+      }
+    },
+    {
+      "ecosystem": "Python",
+      "name": "cffi",
+      "version": "1.15.1",
+      "license": "MIT",
+      "license_files": [
+        "third-party/licenses/python-cffi-1.15.1/LICENSE"
+      ],
+      "upstream": "https://pypi.org/project/cffi/1.15.1/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "chardet",
+      "version": "5.2.0",
+      "license": "LGPL",
+      "license_files": [
+        "third-party/licenses/python-chardet-5.2.0/LICENSE"
+      ],
+      "upstream": "https://pypi.org/project/chardet/5.2.0/",
+      "source_distribution": {
+        "url": "https://files.pythonhosted.org/packages/f3/0d/f7b6ab21ec75897ed80c17d79b15951a719226b9fababf1e40ea74d69079/chardet-5.2.0.tar.gz",
+        "sha256": "1b3b6ff479a8c414bc3fa2c0852995695c4a026dcd6d0633b2dd092ca39c1cf7",
+        "file": "third-party/sources/chardet-5.2.0.tar.gz"
+      }
+    },
+    {
+      "ecosystem": "Python",
+      "name": "charset-normalizer",
+      "version": "3.3.2",
+      "license": "MIT",
+      "license_files": [
+        "third-party/licenses/python-charset-normalizer-3.3.2/LICENSE"
+      ],
+      "upstream": "https://pypi.org/project/charset-normalizer/3.3.2/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "colorama",
+      "version": "0.4.6",
+      "license": "BSD License",
+      "license_files": [
+        "third-party/licenses/python-colorama-0.4.6/LICENSE.txt"
+      ],
+      "upstream": "https://pypi.org/project/colorama/0.4.6/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "cryptography",
+      "version": "41.0.5",
+      "license": "Apache-2.0 OR BSD-3-Clause",
+      "license_files": [
+        "third-party/licenses/python-cryptography-41.0.5/LICENSE",
+        "third-party/licenses/python-cryptography-41.0.5/LICENSE.APACHE",
+        "third-party/licenses/python-cryptography-41.0.5/LICENSE.BSD"
+      ],
+      "upstream": "https://pypi.org/project/cryptography/41.0.5/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "defusedxml",
+      "version": "0.7.1",
+      "license": "PSFL",
+      "license_files": [
+        "third-party/licenses/python-defusedxml-0.7.1/LICENSE"
+      ],
+      "upstream": "https://pypi.org/project/defusedxml/0.7.1/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "filelock",
+      "version": "3.12.2",
+      "license": "The Unlicense (Unlicense)",
+      "license_files": [
+        "third-party/licenses/python-filelock-3.12.2/LICENSE"
+      ],
+      "upstream": "https://pypi.org/project/filelock/3.12.2/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "idna",
+      "version": "3.4",
+      "license": "BSD License",
+      "license_files": [
+        "third-party/licenses/python-idna-3.4/LICENSE.md"
+      ],
+      "upstream": "https://pypi.org/project/idna/3.4/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "importlib-metadata",
+      "version": "6.7.0",
+      "license": "Apache Software License",
+      "license_files": [
+        "third-party/licenses/python-importlib-metadata-6.7.0/LICENSE"
+      ],
+      "upstream": "https://pypi.org/project/importlib-metadata/6.7.0/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "packaging",
+      "version": "24.0",
+      "license": "Apache Software License; BSD License",
+      "license_files": [
+        "third-party/licenses/python-packaging-24.0/LICENSE",
+        "third-party/licenses/python-packaging-24.0/LICENSE.APACHE",
+        "third-party/licenses/python-packaging-24.0/LICENSE.BSD"
+      ],
+      "upstream": "https://pypi.org/project/packaging/24.0/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "pefile",
+      "version": "2023.2.7",
+      "license": "MIT",
+      "license_files": [
+        "third-party/licenses/python-pefile-2023.2.7/LICENSE"
+      ],
+      "upstream": "https://pypi.org/project/pefile/2023.2.7/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "Pillow",
+      "version": "9.5.0",
+      "license": "HPND",
+      "license_files": [
+        "third-party/licenses/python-pillow-9.5.0/LICENSE"
+      ],
+      "upstream": "https://pypi.org/project/Pillow/9.5.0/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "psutil",
+      "version": "5.9.6",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        "third-party/licenses/python-psutil-5.9.6/LICENSE"
+      ],
+      "upstream": "https://pypi.org/project/psutil/5.9.6/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "pycparser",
+      "version": "2.21",
+      "license": "BSD",
+      "license_files": [
+        "third-party/licenses/python-pycparser-2.21/LICENSE"
+      ],
+      "upstream": "https://pypi.org/project/pycparser/2.21/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "pycryptodome",
+      "version": "3.19.0",
+      "license": "BSD, Public Domain",
+      "license_files": [
+        "third-party/licenses/python-pycryptodome-3.19.0/LICENSE.rst"
+      ],
+      "upstream": "https://pypi.org/project/pycryptodome/3.19.0/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "pyinstaller",
+      "version": "5.13.2",
+      "license": "GPLv2-or-later with a special exception which allows to use PyInstaller to build and distribute non-free programs (including commercial ones)",
+      "license_files": [
+        "third-party/licenses/python-pyinstaller-5.13.2/COPYING.txt"
+      ],
+      "upstream": "https://pypi.org/project/pyinstaller/5.13.2/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "pynput",
+      "version": "1.7.6",
+      "license": "LGPLv3",
+      "license_files": [
+        "third-party/licenses/python-pynput-1.7.6/COPYING.LGPL"
+      ],
+      "upstream": "https://pypi.org/project/pynput/1.7.6/",
+      "source_distribution": {
+        "url": "https://files.pythonhosted.org/packages/d7/74/a231bca942b1cd9c4bb707788be325a61d26c7998bd25e88dc510d4b55c7/pynput-1.7.6.tar.gz",
+        "sha256": "3a5726546da54116b687785d38b1db56997ce1d28e53e8d22fc656d8b92e533c",
+        "file": "third-party/sources/pynput-1.7.6.tar.gz"
+      }
+    },
+    {
+      "ecosystem": "Python",
+      "name": "pyOpenSSL",
+      "version": "24.3.0",
+      "license": "Apache License, Version 2.0",
+      "license_files": [
+        "third-party/licenses/python-pyopenssl-24.3.0/LICENSE"
+      ],
+      "upstream": "https://pypi.org/project/pyOpenSSL/24.3.0/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "pyperclip",
+      "version": "1.8.2",
+      "license": "BSD",
+      "license_files": [
+        "third-party/licenses/python-pyperclip-1.8.2/LICENSE.txt"
+      ],
+      "upstream": "https://pypi.org/project/pyperclip/1.8.2/",
+      "source_distribution": {
+        "url": "https://files.pythonhosted.org/packages/a7/2c/4c64579f847bd5d539803c8b909e54ba087a79d01bb3aba433a95879a6c5/pyperclip-1.8.2.tar.gz",
+        "sha256": "105254a8b04934f0bc84e9c24eb360a591aaf6535c9def5f29d92af107a9bf57"
+      }
+    },
+    {
+      "ecosystem": "Python",
+      "name": "pypinyin",
+      "version": "0.53.0",
+      "license": "MIT",
+      "license_files": [
+        "third-party/licenses/python-pypinyin-0.53.0/LICENSE.txt"
+      ],
+      "upstream": "https://pypi.org/project/pypinyin/0.53.0/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "pyreadline",
+      "version": "2.1",
+      "license": "BSD",
+      "license_files": [
+        "third-party/licenses/python-pyreadline-2.1/COPYING"
+      ],
+      "upstream": "https://pypi.org/project/pyreadline/2.1/",
+      "source_distribution": {
+        "url": "https://files.pythonhosted.org/packages/bc/7c/d724ef1ec3ab2125f38a1d53285745445ec4a8f19b9bb0761b4064316679/pyreadline-2.1.zip",
+        "sha256": "4530592fc2e85b25b1a9f79664433da09237c1a270e4d78ea5aa3a2c7229e2d1"
+      }
+    },
+    {
+      "ecosystem": "Python",
+      "name": "PySocks",
+      "version": "1.7.1",
+      "license": "BSD",
+      "license_files": [
+        "third-party/licenses/python-pysocks-1.7.1/LICENSE"
+      ],
+      "upstream": "https://pypi.org/project/PySocks/1.7.1/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "python-dateutil",
+      "version": "2.8.2",
+      "license": "Dual License",
+      "license_files": [
+        "third-party/licenses/python-python-dateutil-2.8.2/LICENSE"
+      ],
+      "upstream": "https://pypi.org/project/python-dateutil/2.8.2/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "pywin32",
+      "version": "306",
+      "license": "PSF",
+      "license_files": [
+        "third-party/licenses/python-pywin32-306/113cd3cf78-license.txt",
+        "third-party/licenses/python-pywin32-306/d18ad18cdb-License.txt",
+        "third-party/licenses/python-pywin32-306/license.txt"
+      ],
+      "upstream": "https://pypi.org/project/pywin32/306/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "pywin32-ctypes",
+      "version": "0.2.2",
+      "license": "BSD-3-Clause",
+      "license_files": [
+        "third-party/licenses/python-pywin32-ctypes-0.2.2/LICENSE.txt"
+      ],
+      "upstream": "https://pypi.org/project/pywin32-ctypes/0.2.2/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "PyYAML",
+      "version": "6.0.1",
+      "license": "MIT",
+      "license_files": [
+        "third-party/licenses/python-pyyaml-6.0.1/LICENSE"
+      ],
+      "upstream": "https://pypi.org/project/PyYAML/6.0.1/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "regex",
+      "version": "2024.4.16",
+      "license": "Apache Software License",
+      "license_files": [
+        "third-party/licenses/python-regex-2024.4.16/LICENSE.txt"
+      ],
+      "upstream": "https://pypi.org/project/regex/2024.4.16/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "requests",
+      "version": "2.28.2",
+      "license": "Apache 2.0",
+      "license_files": [
+        "third-party/licenses/python-requests-2.28.2/LICENSE"
+      ],
+      "upstream": "https://pypi.org/project/requests/2.28.2/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "ruamel.yaml",
+      "version": "0.18.6",
+      "license": "MIT license",
+      "license_files": [
+        "third-party/licenses/python-ruamel.yaml-0.18.6/LICENSE"
+      ],
+      "upstream": "https://pypi.org/project/ruamel.yaml/0.18.6/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "ruamel.yaml.clib",
+      "version": "0.2.8",
+      "license": "MIT",
+      "license_files": [
+        "third-party/licenses/python-ruamel.yaml.clib-0.2.8/LICENSE"
+      ],
+      "upstream": "https://pypi.org/project/ruamel.yaml.clib/0.2.8/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "selenium",
+      "version": "4.11.2",
+      "license": "Apache 2.0",
+      "license_files": [
+        "third-party/licenses/python-selenium-4.11.2/LICENSE",
+        "third-party/licenses/python-selenium-4.11.2/NOTICE"
+      ],
+      "upstream": "https://pypi.org/project/selenium/4.11.2/",
+      "source_distribution": {
+        "url": "https://files.pythonhosted.org/packages/9b/21/dc6e78b967b62cb39748bfd1af10cc245c8bc81ad8568b1efe80e73fd8a7/selenium-4.11.2.tar.gz",
+        "sha256": "9f9a5ed586280a3594f7461eb1d9dab3eac9d91e28572f365e9b98d9d03e02b5"
+      }
+    },
+    {
+      "ecosystem": "Python",
+      "name": "setuptools",
+      "version": "60.2.0",
+      "license": "MIT License",
+      "license_files": [
+        "third-party/licenses/python-setuptools-60.2.0/LICENSE"
+      ],
+      "upstream": "https://pypi.org/project/setuptools/60.2.0/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "simplejson",
+      "version": "3.19.2",
+      "license": "MIT License",
+      "license_files": [
+        "third-party/licenses/python-simplejson-3.19.2/LICENSE.txt"
+      ],
+      "upstream": "https://pypi.org/project/simplejson/3.19.2/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "six",
+      "version": "1.16.0",
+      "license": "MIT",
+      "license_files": [
+        "third-party/licenses/python-six-1.16.0/LICENSE"
+      ],
+      "upstream": "https://pypi.org/project/six/1.16.0/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "typing_extensions",
+      "version": "4.7.1",
+      "license": "Python Software Foundation License",
+      "license_files": [
+        "third-party/licenses/python-typing-extensions-4.7.1/LICENSE"
+      ],
+      "upstream": "https://pypi.org/project/typing_extensions/4.7.1/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "urllib3",
+      "version": "1.26.20",
+      "license": "MIT",
+      "license_files": [
+        "third-party/licenses/python-urllib3-1.26.20/LICENSE.txt"
+      ],
+      "upstream": "https://pypi.org/project/urllib3/1.26.20/"
+    },
+    {
+      "ecosystem": "Python",
+      "name": "zipp",
+      "version": "3.15.0",
+      "license": "MIT License",
+      "license_files": [
+        "third-party/licenses/python-zipp-3.15.0/LICENSE"
+      ],
+      "upstream": "https://pypi.org/project/zipp/3.15.0/"
+    },
+    {
+      "ecosystem": "Runtime",
+      "name": "CPython and bundled Tcl/Tk",
+      "version": "3.7.9",
+      "license": "See original license texts",
+      "license_files": [
+        "third-party/licenses/cpython-3.7.9/LICENSE.txt",
+        "third-party/licenses/cpython-3.7.9/demos-license.terms",
+        "third-party/licenses/cpython-3.7.9/tk-license.terms",
+        "third-party/licenses/cpython-3.7.9/tk8.6-license.terms"
+      ],
+      "upstream": "https://www.python.org/downloads/release/python-379/"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "adler2",
+      "version": "2.0.1",
+      "license": "0BSD OR MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-adler2-2.0.1/LICENSE-0BSD",
+        "third-party/licenses/rust-adler2-2.0.1/LICENSE-APACHE",
+        "third-party/licenses/rust-adler2-2.0.1/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/adler2/2.0.1"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "anstream",
+      "version": "0.6.21",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-anstream-0.6.21/LICENSE-APACHE",
+        "third-party/licenses/rust-anstream-0.6.21/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/anstream/0.6.21"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "anstyle",
+      "version": "1.0.14",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-anstyle-1.0.14/LICENSE-APACHE",
+        "third-party/licenses/rust-anstyle-1.0.14/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/anstyle/1.0.14"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "anstyle-parse",
+      "version": "0.2.7",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-anstyle-parse-0.2.7/LICENSE-APACHE",
+        "third-party/licenses/rust-anstyle-parse-0.2.7/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/anstyle-parse/0.2.7"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "anstyle-query",
+      "version": "1.1.5",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-anstyle-query-1.1.5/LICENSE-APACHE",
+        "third-party/licenses/rust-anstyle-query-1.1.5/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/anstyle-query/1.1.5"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "anstyle-wincon",
+      "version": "3.0.11",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-anstyle-wincon-3.0.11/LICENSE-APACHE",
+        "third-party/licenses/rust-anstyle-wincon-3.0.11/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/anstyle-wincon/3.0.11"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "anyhow",
+      "version": "1.0.102",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-anyhow-1.0.102/LICENSE-APACHE",
+        "third-party/licenses/rust-anyhow-1.0.102/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/anyhow/1.0.102"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "base64",
+      "version": "0.22.1",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-base64-0.22.1/LICENSE-APACHE",
+        "third-party/licenses/rust-base64-0.22.1/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/base64/0.22.1"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "byteorder",
+      "version": "1.5.0",
+      "license": "Unlicense OR MIT",
+      "license_files": [
+        "third-party/licenses/rust-byteorder-1.5.0/COPYING",
+        "third-party/licenses/rust-byteorder-1.5.0/LICENSE-MIT",
+        "third-party/licenses/rust-byteorder-1.5.0/UNLICENSE"
+      ],
+      "upstream": "https://crates.io/crates/byteorder/1.5.0"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "cfg-if",
+      "version": "1.0.4",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-cfg-if-1.0.4/LICENSE-APACHE",
+        "third-party/licenses/rust-cfg-if-1.0.4/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/cfg-if/1.0.4"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "clap",
+      "version": "4.5.38",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-clap-4.5.38/LICENSE-APACHE",
+        "third-party/licenses/rust-clap-4.5.38/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/clap/4.5.38"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "clap_builder",
+      "version": "4.5.38",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-clap_builder-4.5.38/LICENSE-APACHE",
+        "third-party/licenses/rust-clap_builder-4.5.38/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/clap_builder/4.5.38"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "clap_derive",
+      "version": "4.5.32",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-clap_derive-4.5.32/LICENSE-APACHE",
+        "third-party/licenses/rust-clap_derive-4.5.32/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/clap_derive/4.5.32"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "clap_lex",
+      "version": "0.7.7",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-clap_lex-0.7.7/LICENSE-APACHE",
+        "third-party/licenses/rust-clap_lex-0.7.7/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/clap_lex/0.7.7"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "colorchoice",
+      "version": "1.0.5",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-colorchoice-1.0.5/LICENSE-APACHE",
+        "third-party/licenses/rust-colorchoice-1.0.5/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/colorchoice/1.0.5"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "countme",
+      "version": "3.0.1",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-countme-3.0.1/LICENSE-APACHE",
+        "third-party/licenses/rust-countme-3.0.1/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/countme/3.0.1"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "crc32fast",
+      "version": "1.5.0",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-crc32fast-1.5.0/LICENSE-APACHE",
+        "third-party/licenses/rust-crc32fast-1.5.0/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/crc32fast/1.5.0"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "crc32fast",
+      "version": "1.5.1",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-crc32fast-1.5.1/LICENSE-APACHE",
+        "third-party/licenses/rust-crc32fast-1.5.1/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/crc32fast/1.5.1"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "displaydoc",
+      "version": "0.2.5",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-displaydoc-0.2.5/LICENSE-APACHE",
+        "third-party/licenses/rust-displaydoc-0.2.5/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/displaydoc/0.2.5"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "encoding_rs",
+      "version": "0.8.35",
+      "license": "(Apache-2.0 OR MIT) AND BSD-3-Clause",
+      "license_files": [
+        "third-party/licenses/rust-encoding_rs-0.8.35/COPYRIGHT",
+        "third-party/licenses/rust-encoding_rs-0.8.35/LICENSE-APACHE",
+        "third-party/licenses/rust-encoding_rs-0.8.35/LICENSE-MIT",
+        "third-party/licenses/rust-encoding_rs-0.8.35/LICENSE-WHATWG"
+      ],
+      "upstream": "https://crates.io/crates/encoding_rs/0.8.35"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "equivalent",
+      "version": "1.0.2",
+      "license": "Apache-2.0 OR MIT",
+      "license_files": [
+        "third-party/licenses/rust-equivalent-1.0.2/LICENSE-APACHE",
+        "third-party/licenses/rust-equivalent-1.0.2/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/equivalent/1.0.2"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "equivalent",
+      "version": "1.0.3",
+      "license": "Apache-2.0 OR MIT",
+      "license_files": [
+        "third-party/licenses/rust-equivalent-1.0.3/LICENSE-APACHE",
+        "third-party/licenses/rust-equivalent-1.0.3/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/equivalent/1.0.3"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "flate2",
+      "version": "1.1.10",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-flate2-1.1.10/LICENSE-APACHE",
+        "third-party/licenses/rust-flate2-1.1.10/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/flate2/1.1.10"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "flate2",
+      "version": "1.1.9",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-flate2-1.1.9/LICENSE-APACHE",
+        "third-party/licenses/rust-flate2-1.1.9/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/flate2/1.1.9"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "form_urlencoded",
+      "version": "1.2.2",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-form_urlencoded-1.2.2/LICENSE-APACHE",
+        "third-party/licenses/rust-form_urlencoded-1.2.2/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/form_urlencoded/1.2.2"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "hashbrown",
+      "version": "0.14.5",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-hashbrown-0.14.5/LICENSE-APACHE",
+        "third-party/licenses/rust-hashbrown-0.14.5/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/hashbrown/0.14.5"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "hashbrown",
+      "version": "0.17.1",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-hashbrown-0.17.1/LICENSE-APACHE",
+        "third-party/licenses/rust-hashbrown-0.17.1/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/hashbrown/0.17.1"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "heck",
+      "version": "0.5.0",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-heck-0.5.0/LICENSE-APACHE",
+        "third-party/licenses/rust-heck-0.5.0/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/heck/0.5.0"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "icu_collections",
+      "version": "2.1.1",
+      "license": "Unicode-3.0",
+      "license_files": [
+        "third-party/licenses/rust-icu_collections-2.1.1/LICENSE"
+      ],
+      "upstream": "https://crates.io/crates/icu_collections/2.1.1"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "icu_locale_core",
+      "version": "2.1.1",
+      "license": "Unicode-3.0",
+      "license_files": [
+        "third-party/licenses/rust-icu_locale_core-2.1.1/LICENSE"
+      ],
+      "upstream": "https://crates.io/crates/icu_locale_core/2.1.1"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "icu_normalizer",
+      "version": "2.1.1",
+      "license": "Unicode-3.0",
+      "license_files": [
+        "third-party/licenses/rust-icu_normalizer-2.1.1/LICENSE"
+      ],
+      "upstream": "https://crates.io/crates/icu_normalizer/2.1.1"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "icu_normalizer_data",
+      "version": "2.1.1",
+      "license": "Unicode-3.0",
+      "license_files": [
+        "third-party/licenses/rust-icu_normalizer_data-2.1.1/LICENSE"
+      ],
+      "upstream": "https://crates.io/crates/icu_normalizer_data/2.1.1"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "icu_properties",
+      "version": "2.1.2",
+      "license": "Unicode-3.0",
+      "license_files": [
+        "third-party/licenses/rust-icu_properties-2.1.2/LICENSE"
+      ],
+      "upstream": "https://crates.io/crates/icu_properties/2.1.2"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "icu_properties_data",
+      "version": "2.1.2",
+      "license": "Unicode-3.0",
+      "license_files": [
+        "third-party/licenses/rust-icu_properties_data-2.1.2/LICENSE"
+      ],
+      "upstream": "https://crates.io/crates/icu_properties_data/2.1.2"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "icu_provider",
+      "version": "2.1.1",
+      "license": "Unicode-3.0",
+      "license_files": [
+        "third-party/licenses/rust-icu_provider-2.1.1/LICENSE"
+      ],
+      "upstream": "https://crates.io/crates/icu_provider/2.1.1"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "idna",
+      "version": "1.1.0",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-idna-1.1.0/LICENSE-APACHE",
+        "third-party/licenses/rust-idna-1.1.0/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/idna/1.1.0"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "idna_adapter",
+      "version": "1.2.1",
+      "license": "Apache-2.0 OR MIT",
+      "license_files": [
+        "third-party/licenses/rust-idna_adapter-1.2.1/LICENSE-APACHE",
+        "third-party/licenses/rust-idna_adapter-1.2.1/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/idna_adapter/1.2.1"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "indexmap",
+      "version": "2.14.0",
+      "license": "Apache-2.0 OR MIT",
+      "license_files": [
+        "third-party/licenses/rust-indexmap-2.14.0/LICENSE-APACHE",
+        "third-party/licenses/rust-indexmap-2.14.0/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/indexmap/2.14.0"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "indexmap",
+      "version": "2.14.2",
+      "license": "Apache-2.0 OR MIT",
+      "license_files": [
+        "third-party/licenses/rust-indexmap-2.14.2/LICENSE-APACHE",
+        "third-party/licenses/rust-indexmap-2.14.2/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/indexmap/2.14.2"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "is_terminal_polyfill",
+      "version": "1.70.2",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-is_terminal_polyfill-1.70.2/LICENSE-APACHE",
+        "third-party/licenses/rust-is_terminal_polyfill-1.70.2/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/is_terminal_polyfill/1.70.2"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "itoa",
+      "version": "1.0.17",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-itoa-1.0.17/LICENSE-APACHE",
+        "third-party/licenses/rust-itoa-1.0.17/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/itoa/1.0.17"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "itoa",
+      "version": "1.0.18",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-itoa-1.0.18/LICENSE-APACHE",
+        "third-party/licenses/rust-itoa-1.0.18/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/itoa/1.0.18"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "litemap",
+      "version": "0.8.1",
+      "license": "Unicode-3.0",
+      "license_files": [
+        "third-party/licenses/rust-litemap-0.8.1/LICENSE"
+      ],
+      "upstream": "https://crates.io/crates/litemap/0.8.1"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "md5",
+      "version": "0.7.0",
+      "license": "Apache-2.0/MIT",
+      "license_files": [
+        "third-party/licenses/rust-md5-0.7.0/LICENSE.md"
+      ],
+      "upstream": "https://crates.io/crates/md5/0.7.0"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "memchr",
+      "version": "2.8.0",
+      "license": "Unlicense OR MIT",
+      "license_files": [
+        "third-party/licenses/rust-memchr-2.8.0/COPYING",
+        "third-party/licenses/rust-memchr-2.8.0/LICENSE-MIT",
+        "third-party/licenses/rust-memchr-2.8.0/UNLICENSE"
+      ],
+      "upstream": "https://crates.io/crates/memchr/2.8.0"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "memchr",
+      "version": "2.8.3",
+      "license": "Unlicense OR MIT",
+      "license_files": [
+        "third-party/licenses/rust-memchr-2.8.3/COPYING",
+        "third-party/licenses/rust-memchr-2.8.3/LICENSE-MIT",
+        "third-party/licenses/rust-memchr-2.8.3/UNLICENSE"
+      ],
+      "upstream": "https://crates.io/crates/memchr/2.8.3"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "miniz_oxide",
+      "version": "0.8.9",
+      "license": "MIT OR Zlib OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-miniz_oxide-0.8.9/LICENSE",
+        "third-party/licenses/rust-miniz_oxide-0.8.9/LICENSE-APACHE.md",
+        "third-party/licenses/rust-miniz_oxide-0.8.9/LICENSE-MIT.md",
+        "third-party/licenses/rust-miniz_oxide-0.8.9/LICENSE-ZLIB.md"
+      ],
+      "upstream": "https://crates.io/crates/miniz_oxide/0.8.9"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "miniz_oxide",
+      "version": "0.9.1",
+      "license": "MIT OR Zlib OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-miniz_oxide-0.9.1/LICENSE",
+        "third-party/licenses/rust-miniz_oxide-0.9.1/LICENSE-APACHE.md",
+        "third-party/licenses/rust-miniz_oxide-0.9.1/LICENSE-MIT.md",
+        "third-party/licenses/rust-miniz_oxide-0.9.1/LICENSE-ZLIB.md"
+      ],
+      "upstream": "https://crates.io/crates/miniz_oxide/0.9.1"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "once_cell_polyfill",
+      "version": "1.70.2",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-once_cell_polyfill-1.70.2/LICENSE-APACHE",
+        "third-party/licenses/rust-once_cell_polyfill-1.70.2/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/once_cell_polyfill/1.70.2"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "pathdiff",
+      "version": "0.2.3",
+      "license": "MIT/Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-pathdiff-0.2.3/LICENSE-APACHE",
+        "third-party/licenses/rust-pathdiff-0.2.3/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/pathdiff/0.2.3"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "percent-encoding",
+      "version": "2.3.2",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-percent-encoding-2.3.2/LICENSE-APACHE",
+        "third-party/licenses/rust-percent-encoding-2.3.2/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/percent-encoding/2.3.2"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "potential_utf",
+      "version": "0.1.4",
+      "license": "Unicode-3.0",
+      "license_files": [
+        "third-party/licenses/rust-potential_utf-0.1.4/LICENSE"
+      ],
+      "upstream": "https://crates.io/crates/potential_utf/0.1.4"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "proc-macro2",
+      "version": "1.0.106",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-proc-macro2-1.0.106/LICENSE-APACHE",
+        "third-party/licenses/rust-proc-macro2-1.0.106/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/proc-macro2/1.0.106"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "quote",
+      "version": "1.0.45",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-quote-1.0.45/LICENSE-APACHE",
+        "third-party/licenses/rust-quote-1.0.45/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/quote/1.0.45"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "rowan",
+      "version": "0.16.1",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-rowan-0.16.1/LICENSE-APACHE",
+        "third-party/licenses/rust-rowan-0.16.1/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/rowan/0.16.1"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "rustc-hash",
+      "version": "1.1.0",
+      "license": "Apache-2.0/MIT",
+      "license_files": [
+        "third-party/licenses/rust-rustc-hash-1.1.0/LICENSE-APACHE",
+        "third-party/licenses/rust-rustc-hash-1.1.0/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/rustc-hash/1.1.0"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "ryu",
+      "version": "1.0.23",
+      "license": "Apache-2.0 OR BSL-1.0",
+      "license_files": [
+        "third-party/licenses/rust-ryu-1.0.23/LICENSE-APACHE",
+        "third-party/licenses/rust-ryu-1.0.23/LICENSE-BOOST"
+      ],
+      "upstream": "https://crates.io/crates/ryu/1.0.23"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "serde",
+      "version": "1.0.228",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-serde-1.0.228/LICENSE-APACHE",
+        "third-party/licenses/rust-serde-1.0.228/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/serde/1.0.228"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "serde",
+      "version": "1.0.229",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-serde-1.0.229/LICENSE-APACHE",
+        "third-party/licenses/rust-serde-1.0.229/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/serde/1.0.229"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "serde_core",
+      "version": "1.0.228",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-serde_core-1.0.228/LICENSE-APACHE",
+        "third-party/licenses/rust-serde_core-1.0.228/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/serde_core/1.0.228"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "serde_core",
+      "version": "1.0.229",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-serde_core-1.0.229/LICENSE-APACHE",
+        "third-party/licenses/rust-serde_core-1.0.229/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/serde_core/1.0.229"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "serde_derive",
+      "version": "1.0.228",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-serde_derive-1.0.228/LICENSE-APACHE",
+        "third-party/licenses/rust-serde_derive-1.0.228/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/serde_derive/1.0.228"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "serde_json",
+      "version": "1.0.149",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-serde_json-1.0.149/LICENSE-APACHE",
+        "third-party/licenses/rust-serde_json-1.0.149/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/serde_json/1.0.149"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "serde_json",
+      "version": "1.0.151",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-serde_json-1.0.151/LICENSE-APACHE",
+        "third-party/licenses/rust-serde_json-1.0.151/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/serde_json/1.0.151"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "serde_spanned",
+      "version": "1.1.1",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-serde_spanned-1.1.1/LICENSE-APACHE",
+        "third-party/licenses/rust-serde_spanned-1.1.1/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/serde_spanned/1.1.1"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "serde_yaml",
+      "version": "0.9.34+deprecated",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-serde_yaml-0.9.34+deprecated/LICENSE-APACHE",
+        "third-party/licenses/rust-serde_yaml-0.9.34+deprecated/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/serde_yaml/0.9.34+deprecated"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "simd-adler32",
+      "version": "0.3.10",
+      "license": "MIT",
+      "license_files": [
+        "third-party/licenses/rust-simd-adler32-0.3.10/LICENSE.md"
+      ],
+      "upstream": "https://crates.io/crates/simd-adler32/0.3.10"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "simd-adler32",
+      "version": "0.3.8",
+      "license": "MIT",
+      "license_files": [
+        "third-party/licenses/rust-simd-adler32-0.3.8/LICENSE.md"
+      ],
+      "upstream": "https://crates.io/crates/simd-adler32/0.3.8"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "smallvec",
+      "version": "1.15.1",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-smallvec-1.15.1/LICENSE-APACHE",
+        "third-party/licenses/rust-smallvec-1.15.1/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/smallvec/1.15.1"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "stable_deref_trait",
+      "version": "1.2.1",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-stable_deref_trait-1.2.1/LICENSE-APACHE",
+        "third-party/licenses/rust-stable_deref_trait-1.2.1/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/stable_deref_trait/1.2.1"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "strsim",
+      "version": "0.11.1",
+      "license": "MIT",
+      "license_files": [
+        "third-party/licenses/rust-strsim-0.11.1/LICENSE"
+      ],
+      "upstream": "https://crates.io/crates/strsim/0.11.1"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "syn",
+      "version": "2.0.117",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-syn-2.0.117/LICENSE-APACHE",
+        "third-party/licenses/rust-syn-2.0.117/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/syn/2.0.117"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "synstructure",
+      "version": "0.13.2",
+      "license": "MIT",
+      "license_files": [
+        "third-party/licenses/rust-synstructure-0.13.2/LICENSE"
+      ],
+      "upstream": "https://crates.io/crates/synstructure/0.13.2"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "text-size",
+      "version": "1.1.1",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-text-size-1.1.1/LICENSE-APACHE",
+        "third-party/licenses/rust-text-size-1.1.1/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/text-size/1.1.1"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "tinystr",
+      "version": "0.8.2",
+      "license": "Unicode-3.0",
+      "license_files": [
+        "third-party/licenses/rust-tinystr-0.8.2/LICENSE"
+      ],
+      "upstream": "https://crates.io/crates/tinystr/0.8.2"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "toml",
+      "version": "1.1.4+spec-1.1.0",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-toml-1.1.4+spec-1.1.0/LICENSE-APACHE",
+        "third-party/licenses/rust-toml-1.1.4+spec-1.1.0/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/toml/1.1.4+spec-1.1.0"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "toml_datetime",
+      "version": "1.1.1+spec-1.1.0",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-toml_datetime-1.1.1+spec-1.1.0/LICENSE-APACHE",
+        "third-party/licenses/rust-toml_datetime-1.1.1+spec-1.1.0/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/toml_datetime/1.1.1+spec-1.1.0"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "toml_parser",
+      "version": "1.1.3+spec-1.1.0",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-toml_parser-1.1.3+spec-1.1.0/LICENSE-APACHE",
+        "third-party/licenses/rust-toml_parser-1.1.3+spec-1.1.0/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/toml_parser/1.1.3+spec-1.1.0"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "toml_writer",
+      "version": "1.1.2+spec-1.1.0",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-toml_writer-1.1.2+spec-1.1.0/LICENSE-APACHE",
+        "third-party/licenses/rust-toml_writer-1.1.2+spec-1.1.0/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/toml_writer/1.1.2+spec-1.1.0"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "unicode-ident",
+      "version": "1.0.24",
+      "license": "(MIT OR Apache-2.0) AND Unicode-3.0",
+      "license_files": [
+        "third-party/licenses/rust-unicode-ident-1.0.24/LICENSE-APACHE",
+        "third-party/licenses/rust-unicode-ident-1.0.24/LICENSE-MIT",
+        "third-party/licenses/rust-unicode-ident-1.0.24/LICENSE-UNICODE"
+      ],
+      "upstream": "https://crates.io/crates/unicode-ident/1.0.24"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "unsafe-libyaml",
+      "version": "0.2.11",
+      "license": "MIT",
+      "license_files": [
+        "third-party/licenses/rust-unsafe-libyaml-0.2.11/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/unsafe-libyaml/0.2.11"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "url",
+      "version": "2.5.8",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-url-2.5.8/LICENSE-APACHE",
+        "third-party/licenses/rust-url-2.5.8/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/url/2.5.8"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "utf8_iter",
+      "version": "1.0.4",
+      "license": "Apache-2.0 OR MIT",
+      "license_files": [
+        "third-party/licenses/rust-utf8_iter-1.0.4/COPYRIGHT",
+        "third-party/licenses/rust-utf8_iter-1.0.4/LICENSE-APACHE",
+        "third-party/licenses/rust-utf8_iter-1.0.4/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/utf8_iter/1.0.4"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "utf8parse",
+      "version": "0.2.2",
+      "license": "Apache-2.0 OR MIT",
+      "license_files": [
+        "third-party/licenses/rust-utf8parse-0.2.2/LICENSE-APACHE",
+        "third-party/licenses/rust-utf8parse-0.2.2/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/utf8parse/0.2.2"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "version_check",
+      "version": "0.9.5",
+      "license": "MIT/Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-version_check-0.9.5/LICENSE-APACHE",
+        "third-party/licenses/rust-version_check-0.9.5/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/version_check/0.9.5"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "windows-link",
+      "version": "0.2.1",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-windows-link-0.2.1/license-apache-2.0",
+        "third-party/licenses/rust-windows-link-0.2.1/license-mit"
+      ],
+      "upstream": "https://crates.io/crates/windows-link/0.2.1"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "windows-sys",
+      "version": "0.48.0",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-windows-sys-0.48.0/license-apache-2.0",
+        "third-party/licenses/rust-windows-sys-0.48.0/license-mit"
+      ],
+      "upstream": "https://crates.io/crates/windows-sys/0.48.0"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "windows-sys",
+      "version": "0.61.2",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-windows-sys-0.61.2/license-apache-2.0",
+        "third-party/licenses/rust-windows-sys-0.61.2/license-mit"
+      ],
+      "upstream": "https://crates.io/crates/windows-sys/0.61.2"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "windows-targets",
+      "version": "0.48.5",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-windows-targets-0.48.5/license-apache-2.0",
+        "third-party/licenses/rust-windows-targets-0.48.5/license-mit"
+      ],
+      "upstream": "https://crates.io/crates/windows-targets/0.48.5"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "windows_x86_64_msvc",
+      "version": "0.48.5",
+      "license": "MIT OR Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-windows_x86_64_msvc-0.48.5/license-apache-2.0",
+        "third-party/licenses/rust-windows_x86_64_msvc-0.48.5/license-mit"
+      ],
+      "upstream": "https://crates.io/crates/windows_x86_64_msvc/0.48.5"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "winnow",
+      "version": "1.0.4",
+      "license": "MIT",
+      "license_files": [
+        "third-party/licenses/rust-winnow-1.0.4/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/winnow/1.0.4"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "winreg",
+      "version": "0.52.0",
+      "license": "MIT",
+      "license_files": [
+        "third-party/licenses/rust-winreg-0.52.0/LICENSE"
+      ],
+      "upstream": "https://crates.io/crates/winreg/0.52.0"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "winresource",
+      "version": "0.1.31",
+      "license": "MIT",
+      "license_files": [
+        "third-party/licenses/rust-winresource-0.1.31/LICENSE"
+      ],
+      "upstream": "https://crates.io/crates/winresource/0.1.31"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "writeable",
+      "version": "0.6.2",
+      "license": "Unicode-3.0",
+      "license_files": [
+        "third-party/licenses/rust-writeable-0.6.2/LICENSE"
+      ],
+      "upstream": "https://crates.io/crates/writeable/0.6.2"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "yaml-edit",
+      "version": "0.3.5",
+      "license": "Apache-2.0",
+      "license_files": [
+        "third-party/licenses/rust-yaml-edit-0.3.5/ATTRIBUTION.txt",
+        "third-party/licenses/rust-yaml-edit-0.3.5/LICENSE-2.0.txt"
+      ],
+      "upstream": "https://crates.io/crates/yaml-edit/0.3.5"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "yoke",
+      "version": "0.8.1",
+      "license": "Unicode-3.0",
+      "license_files": [
+        "third-party/licenses/rust-yoke-0.8.1/LICENSE"
+      ],
+      "upstream": "https://crates.io/crates/yoke/0.8.1"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "yoke-derive",
+      "version": "0.8.1",
+      "license": "Unicode-3.0",
+      "license_files": [
+        "third-party/licenses/rust-yoke-derive-0.8.1/LICENSE"
+      ],
+      "upstream": "https://crates.io/crates/yoke-derive/0.8.1"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "zerofrom",
+      "version": "0.1.6",
+      "license": "Unicode-3.0",
+      "license_files": [
+        "third-party/licenses/rust-zerofrom-0.1.6/LICENSE"
+      ],
+      "upstream": "https://crates.io/crates/zerofrom/0.1.6"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "zerofrom-derive",
+      "version": "0.1.6",
+      "license": "Unicode-3.0",
+      "license_files": [
+        "third-party/licenses/rust-zerofrom-derive-0.1.6/LICENSE"
+      ],
+      "upstream": "https://crates.io/crates/zerofrom-derive/0.1.6"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "zerotrie",
+      "version": "0.2.3",
+      "license": "Unicode-3.0",
+      "license_files": [
+        "third-party/licenses/rust-zerotrie-0.2.3/LICENSE"
+      ],
+      "upstream": "https://crates.io/crates/zerotrie/0.2.3"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "zerovec",
+      "version": "0.11.5",
+      "license": "Unicode-3.0",
+      "license_files": [
+        "third-party/licenses/rust-zerovec-0.11.5/LICENSE"
+      ],
+      "upstream": "https://crates.io/crates/zerovec/0.11.5"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "zerovec-derive",
+      "version": "0.11.2",
+      "license": "Unicode-3.0",
+      "license_files": [
+        "third-party/licenses/rust-zerovec-derive-0.11.2/LICENSE"
+      ],
+      "upstream": "https://crates.io/crates/zerovec-derive/0.11.2"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "zip",
+      "version": "0.6.6",
+      "license": "MIT",
+      "license_files": [
+        "third-party/licenses/rust-zip-0.6.6/LICENSE"
+      ],
+      "upstream": "https://crates.io/crates/zip/0.6.6"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "zmij",
+      "version": "1.0.21",
+      "license": "MIT",
+      "license_files": [
+        "third-party/licenses/rust-zmij-1.0.21/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/zmij/1.0.21"
+    },
+    {
+      "ecosystem": "Rust dependency graph",
+      "name": "zmij",
+      "version": "1.0.23",
+      "license": "MIT",
+      "license_files": [
+        "third-party/licenses/rust-zmij-1.0.23/LICENSE-MIT"
+      ],
+      "upstream": "https://crates.io/crates/zmij/1.0.23"
+    },
+    {
+      "ecosystem": "Embedded data",
+      "name": "pypinyin dictionary",
+      "version": "0.53.0 baseline",
+      "license": "MIT",
+      "license_files": [
+        "third-party/licenses/pypinyin-dictionary/LICENSE.pypinyin"
+      ],
+      "upstream": "https://github.com/mozillazg/python-pinyin"
+    },
+    {
+      "ecosystem": "Runtime",
+      "name": "Rust standard library and runtime notices",
+      "version": "rustc 1.97.1 (8bab26f4f 2026-07-14)",
+      "license": "MIT OR Apache-2.0; exceptions as documented",
+      "license_files": [
+        "third-party/licenses/rust-standard-library/COPYRIGHT-library.html",
+        "third-party/licenses/rust-standard-library/licenses/Apache-2.0.txt",
+        "third-party/licenses/rust-standard-library/licenses/BSD-2-Clause.txt",
+        "third-party/licenses/rust-standard-library/licenses/CC-BY-SA-4.0.txt",
+        "third-party/licenses/rust-standard-library/licenses/GCC-exception-3.1.txt",
+        "third-party/licenses/rust-standard-library/licenses/GPL-2.0-only.txt",
+        "third-party/licenses/rust-standard-library/licenses/GPL-3.0-or-later.txt",
+        "third-party/licenses/rust-standard-library/licenses/ISC.txt",
+        "third-party/licenses/rust-standard-library/licenses/LLVM-exception.txt",
+        "third-party/licenses/rust-standard-library/licenses/MIT.txt",
+        "third-party/licenses/rust-standard-library/licenses/NCSA.txt",
+        "third-party/licenses/rust-standard-library/licenses/OFL-1.1.txt",
+        "third-party/licenses/rust-standard-library/licenses/Unicode-3.0.txt"
+      ],
+      "upstream": "https://www.rust-lang.org/policies/licenses"
+    }
+  ]
+}

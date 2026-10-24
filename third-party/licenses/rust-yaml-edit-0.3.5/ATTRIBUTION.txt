@@ -1,0 +1,5 @@
+yaml-edit 0.3.5
+Authors (Cargo metadata): Jelmer Vernooĳ <jelmer@debian.org>
+Declared license: Apache-2.0
+Source: https://github.com/jelmer/yaml-edit/tree/f0c9771aeb633daba9603022708c80ccf7b02442
+The upstream crate and commit omit a standalone license document; LICENSE-2.0.txt is the original Apache license text.

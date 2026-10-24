@@ -1,0 +1,20 @@
+# Local projects, credentials and runtime output do not belong in this release repository.
+/repocargo.yaml
+/repocargo.yaml.md5.txt
+/gitbigfilex.json
+/datamap.txt
+/version.txt
+/version/
+/tempdir/
+/runenv/
+/logs/
+/.md5cache.json
+/.repocargo-fetch.lock
+.env
+.env.*
+*.log
+*.pem
+*.key
+*.pfx
+*.p12
+__pycache__/
