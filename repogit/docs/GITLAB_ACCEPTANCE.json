@@ -1,0 +1,97 @@
+{
+  "Product": "RepoGit",
+  "Version": "0.1.0",
+  "EXESHA256": "8104dc005bd13511cd2af02116368bd247b0f1430d55c4d65eb4d92b6bc2adee",
+  "Status": "passed",
+  "TestDate": "2026-10-29",
+  "Service": "Real GitLab service; dedicated private test project; actual address omitted",
+  "Branch": "sync",
+  "DeviceModel": {
+    "A": "Windows test identity",
+    "B": "Same Windows computer; isolated simulation, not a second physical computer",
+    "IndependentDeviceKeys": true,
+    "IndependentSSHConfigs": true,
+    "IndependentWorktrees": true,
+    "SSHAgentDisabled": true,
+    "SSHConnectionMultiplexingDisabled": true
+  },
+  "Results": [
+    {
+      "Test": "A unauthorized access",
+      "Passed": true
+    },
+    {
+      "Test": "A read/write authorization and first push to an empty repository",
+      "Passed": true
+    },
+    {
+      "Test": "Existing origin and initial commit history preserved",
+      "Passed": true
+    },
+    {
+      "Test": "Independent B unauthorized clone refused",
+      "Passed": true
+    },
+    {
+      "Test": "Read-only B clone and fast-forward pull",
+      "Passed": true
+    },
+    {
+      "Test": "Read-only B write refused by GitLab; remote unchanged and reads still allowed",
+      "Passed": true
+    },
+    {
+      "Test": "Revoked B read, fresh clone, pull and push refused by server authentication",
+      "Passed": true
+    },
+    {
+      "Test": "A control read/write succeeds after B revocation",
+      "Passed": true
+    },
+    {
+      "Test": "B retains downloaded code and local commit; cannot obtain post-revocation content",
+      "Passed": true
+    }
+  ],
+  "ReadOnlyPush": {
+    "ExitCode": 128,
+    "ServerMessage": "This deploy key does not have write access to this project.",
+    "RemoteRefsUnchanged": true,
+    "ReadStillWorks": true
+  },
+  "RevokedB": {
+    "Read": {
+      "ExitCode": 128,
+      "ServerAccessDenied": true
+    },
+    "FreshClone": {
+      "ExitCode": 128,
+      "ServerAccessDenied": true
+    },
+    "Pull": {
+      "ExitCode": 1,
+      "ServerAccessDenied": true
+    },
+    "Push": {
+      "ExitCode": 128,
+      "ServerAccessDenied": true
+    },
+    "ServerMessage": "Permission denied (publickey).",
+    "LocalFilesAndCommitPreserved": true,
+    "NewRemoteContentNotObtained": true,
+    "AReadWriteControlPassed": true
+  },
+  "NotCovered": [
+    "Two physical computers or separate networks",
+    "Strict branch/tag server protection",
+    "Unrelated private repository access denial",
+    "Git LFS and submodules"
+  ],
+  "Redaction": {
+    "CompanyAddressesOmitted": true,
+    "OriginalLocalPathsOmitted": true,
+    "DevicePublicKeysAndFingerprintsOmitted": true,
+    "RawInternalLogsIncluded": false,
+    "PrivateKeyMaterialIncluded": false
+  }
+}

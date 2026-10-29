@@ -157,6 +157,8 @@ foreach ($entry in $hashes.PSObject.Properties) {
 
 ZIP 内的 `SHA256SUMS.txt` 只记录 EXE；本目录外部校验文件同时记录 EXE 与 ZIP。
 
-[release.json](release.json) 记录发行身份；[VALIDATION.json](VALIDATION.json) 与 [验证范围](docs/VALIDATION.md) 记录核验结果。EXE 沿用通过干净构建与全部测试的成品，发行 ZIP 为替换公开示例地址、补充使用文档与第三方许可后重新打包。实际 GitLab 读写、撤权及服务器分支规则仍需管理员在测试项目验收。
+[release.json](release.json) 记录发行身份；[VALIDATION.json](VALIDATION.json) 与 [验证范围](docs/VALIDATION.md) 记录核验结果。EXE 沿用通过干净构建与全部测试的成品，ZIP 随公开文档与第三方许可一起分发。
+
+2026-10-29 已在真实 GitLab 测试项目验证 Deploy Key 授权、首次推送、只读克隆/拉取、写入拒绝及撤权后的访问拒绝。**B 是本机隔离模拟**，使用独立密钥、SSH 配置和工作目录；未验证真实双机或严格分支/标签保护。见 [GitLab 实测记录](docs/GITLAB_ACCEPTANCE.md) 与 [机器可读摘要](docs/GITLAB_ACCEPTANCE.json)。自己的服务器权限与保护规则仍需按实际环境验收。
 
 第三方组件保留各自许可，见 [第三方声明](THIRD_PARTY_NOTICES.md)。本工具的发行不包含 Git 或 OpenSSH 本体。

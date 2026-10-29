@@ -1,8 +1,8 @@
 {
   "Status": "passed",
-  "ValidatedAt": "2026-10-29T14:19:20.5244056+08:00",
+  "ValidatedAt": "2026-10-29T18:08:42.1942476+08:00",
   "EXESHA256": "8104dc005bd13511cd2af02116368bd247b0f1430d55c4d65eb4d92b6bc2adee",
-  "ArchiveSHA256": "4961e5896fe03b04c1e8c2201a1c9d3e01b1fd5a107889016585ce69d9905553",
+  "ArchiveSHA256": "8e32369d998c24f98413cd13834960fa64e8d021a9817396c97f312989406f12",
   "BuildEvidence": {
     "Status": "passed",
     "Version": "0.1.0",
@@ -43,12 +43,13 @@
       }
     ],
     "PackagingContractTestsPassed": 9,
-    "VerificationScope": "Original tested EXE unchanged. Local Git/SSH test transport only; real GitLab authorization is not tested."
+    "VerificationScope": "Original clean-build pipeline used local Git/SSH transport only. Separate real-service results are linked in GitLabAcceptance."
   },
   "DeliveryChecks": {
     "ExeMatchesTestedBuild": true,
+    "ExeMatchesGitLabTestedBinary": true,
     "ArchiveExtractedAndAllFilesMatched": true,
-    "ArchiveFileCount": 134,
+    "ArchiveFileCount": 136,
     "CliChecks": [
       "repogit --version",
       "repogit --help",
@@ -65,7 +66,17 @@
     "HashManifestsMatched": true,
     "MarkdownLinksResolved": true,
     "PublicFileScopeChecked": true,
-    "PrivateServiceExamplesRemoved": true
+    "GitLabSummaryRedactionChecked": true
   },
-  "VerificationScope": "Repackaged documentation and licenses; EXE unchanged. No real GitLab read/write, revocation or branch protection tests performed."
+  "VerificationScope": "Unmodified tested EXE; real GitLab Deploy Key authorization, initial push, read-only clone/pull, write denial and revocation verified. B is isolated on the same computer. Physical two-device, cross-network and strict branch/tag protection tests are not covered.",
+  "GitLabAcceptance": {
+    "Status": "passed",
+    "TestDate": "2026-10-29",
+    "EXESHA256": "8104dc005bd13511cd2af02116368bd247b0f1430d55c4d65eb4d92b6bc2adee",
+    "Report": "docs/GITLAB_ACCEPTANCE.json",
+    "Narrative": "docs/GITLAB_ACCEPTANCE.md",
+    "BIsSameComputerIsolatedSimulation": true,
+    "TwoPhysicalComputersTested": false,
+    "StrictBranchTagProtectionTested": false
+  }
 }
