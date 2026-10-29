@@ -1,0 +1,71 @@
+{
+  "Status": "passed",
+  "ValidatedAt": "2026-10-29T14:19:20.5244056+08:00",
+  "EXESHA256": "8104dc005bd13511cd2af02116368bd247b0f1430d55c4d65eb4d92b6bc2adee",
+  "ArchiveSHA256": "4961e5896fe03b04c1e8c2201a1c9d3e01b1fd5a107889016585ce69d9905553",
+  "BuildEvidence": {
+    "Status": "passed",
+    "Version": "0.1.0",
+    "CleanBuild": true,
+    "BuildRunId": "20261029T051141243Z-773f2ba9",
+    "BuildValidatedAt": "2026-10-29T13:12:56.85545+08:00",
+    "SourceSHA256": "427b563e229d8c9909414794de5050e2487ee98d5fd1e6d908a7ed8935cddc9b",
+    "EXESHA256": "8104dc005bd13511cd2af02116368bd247b0f1430d55c4d65eb4d92b6bc2adee",
+    "TestsPassed": 10,
+    "BuildChecks": [
+      {
+        "Step": "gate-contract-tests",
+        "ExitCode": 0
+      },
+      {
+        "Step": "format",
+        "ExitCode": 0
+      },
+      {
+        "Step": "clean-build",
+        "ExitCode": 0
+      },
+      {
+        "Step": "full-tests",
+        "ExitCode": 0
+      },
+      {
+        "Step": "clippy",
+        "ExitCode": 0
+      },
+      {
+        "Step": "cli-version",
+        "ExitCode": 0
+      },
+      {
+        "Step": "cli-help",
+        "ExitCode": 0
+      }
+    ],
+    "PackagingContractTestsPassed": 9,
+    "VerificationScope": "Original tested EXE unchanged. Local Git/SSH test transport only; real GitLab authorization is not tested."
+  },
+  "DeliveryChecks": {
+    "ExeMatchesTestedBuild": true,
+    "ArchiveExtractedAndAllFilesMatched": true,
+    "ArchiveFileCount": 134,
+    "CliChecks": [
+      "repogit --version",
+      "repogit --help",
+      "repogit device --help",
+      "repogit device init --help",
+      "repogit device show --help",
+      "repogit bind --help",
+      "repogit clone --help",
+      "repogit push --help",
+      "repogit pull --help",
+      "repogit status --help",
+      "repogit doctor --help"
+    ],
+    "HashManifestsMatched": true,
+    "MarkdownLinksResolved": true,
+    "PublicFileScopeChecked": true,
+    "PrivateServiceExamplesRemoved": true
+  },
+  "VerificationScope": "Repackaged documentation and licenses; EXE unchanged. No real GitLab read/write, revocation or branch protection tests performed."
+}

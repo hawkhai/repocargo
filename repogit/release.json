@@ -1,0 +1,25 @@
+{
+  "name": "RepoGit",
+  "version": "0.1.0",
+  "release_date": "2026-10-29",
+  "platform": "windows-x86_64",
+  "business_source_included": false,
+  "prerequisites": [
+    "Git on PATH",
+    "OpenSSH ssh and ssh-keygen on PATH"
+  ],
+  "artifacts": [
+    {
+      "file": "repogit.exe",
+      "sha256": "8104dc005bd13511cd2af02116368bd247b0f1430d55c4d65eb4d92b6bc2adee",
+      "size_bytes": 1084416
+    },
+    {
+      "file": "repogit-windows-x64.zip",
+      "sha256": "4961e5896fe03b04c1e8c2201a1c9d3e01b1fd5a107889016585ce69d9905553",
+      "size_bytes": 777742
+    }
+  ],
+  "build_run_id": "20261029T051141243Z-773f2ba9",
+  "packaging": "Unmodified tested EXE; public documentation and third-party licenses repackaged into ZIP."
+}

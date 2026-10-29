@@ -88,6 +88,10 @@ $env:REPOCARGO_FTP_PASSWORD = '<your-password>'
 
 gitbigfileftp 继续作为独立工具保留 JSON 配置及旧入口。RepoCargo 使用 `repocargo.yaml`、显式子命令和独立远端命名空间；不会自动转换旧配置。新旧工具应使用独立工作目录、输出目录和扫描范围。
 
+## RepoGit：无需客户账号的 Git 同步
+
+[RepoGit 成品与文档](repogit/README.md) 使用每台设备独立的 GitLab Deploy Key，同步已有 Git 项目。提供 [Windows x64 EXE](repogit/repogit.exe)、[便携 ZIP](repogit/repogit-windows-x64.zip)、[双设备完整操作步骤](repogit/docs/QUICKSTART.md) 和 [管理员授权说明](repogit/docs/GITLAB_SETUP.md)。需要 Git 与 OpenSSH；请使用 `repogit/` 内独立的校验清单和验证记录。
+
 ## English
 
 RepoCargo keeps large assets outside Git while tracking their configuration, indexes and version identifiers alongside code. This repository ships four Windows x64 executables, public documentation, safe examples and icon assets. Business source code and product build scripts are intentionally not included. Start with `AGENTS.md`, verify `SHA256.json`, and use `repocargo-cli.exe status` and `--dry-run` before an authorized operation. Project configuration is YAML, and the old gitbigfileftp product remains independent.
