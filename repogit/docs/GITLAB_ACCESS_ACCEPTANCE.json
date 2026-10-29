@@ -1,0 +1,91 @@
+{
+  "Product": "RepoGit",
+  "Version": "0.2.0",
+  "EXESHA256": "98adc2529aef99f78add7ea97f8150420bbbc578f27dfddc972c4884a04e1ced",
+  "Status": "passed",
+  "TestDate": "2026-10-29",
+  "Service": "Real GitLab private test project; actual address omitted",
+  "Branch": "sync",
+  "Simulation": "Two isolated environments on the same Windows computer; same transferred access file and dedicated key, separate local credential stores and SSH configurations",
+  "Checks": {
+    "ConfigImportAndRead": {
+      "Passed": true,
+      "RepeatedImportIdempotent": true,
+      "NoPassphraseOrHostPrompt": true
+    },
+    "SenderPush": {
+      "Passed": true
+    },
+    "ReceiverClone": {
+      "Passed": true,
+      "NoExistingTrustOrKeyRequired": true
+    },
+    "ReceiverPull": {
+      "Passed": true
+    },
+    "OrdinaryGitPush": {
+      "Passed": true,
+      "OriginPreserved": true
+    },
+    "RealHostKeyMismatch": {
+      "Passed": true,
+      "ExitCode": 128,
+      "SSHHandshakeRejected": true
+    },
+    "Revocation": {
+      "Passed": true,
+      "Attempts": {
+        "Sender-doctor": {
+          "ExitCode": 128,
+          "ServerAuthenticationDenied": true
+        },
+        "Sender-pull": {
+          "ExitCode": 1,
+          "ServerAuthenticationDenied": true
+        },
+        "Sender-push": {
+          "ExitCode": 128,
+          "ServerAuthenticationDenied": true
+        },
+        "Receiver-doctor": {
+          "ExitCode": 128,
+          "ServerAuthenticationDenied": true
+        },
+        "Receiver-pull": {
+          "ExitCode": 1,
+          "ServerAuthenticationDenied": true
+        },
+        "Receiver-push": {
+          "ExitCode": 128,
+          "ServerAuthenticationDenied": true
+        },
+        "FreshClone": {
+          "ExitCode": 128,
+          "ServerAuthenticationDenied": true
+        },
+        "OrdinaryGitPush": {
+          "ExitCode": 128,
+          "ServerAuthenticationDenied": true
+        }
+      },
+      "BothCopiesRefused": true,
+      "LocalFilesAndHEADPreserved": true,
+      "StillAuthorizedControlReadPassed": true,
+      "RemoteSyncUnchanged": true,
+      "OnlySyncBranchPresent": true
+    }
+  },
+  "NotCovered": [
+    "Two physical computers or separate networks",
+    "Real GitLab read-only permission for the 0.2.0 access-file workflow",
+    "Strict branch/tag restrictions",
+    "Git LFS and submodules"
+  ],
+  "Redaction": {
+    "PrivateKeyMaterialIncluded": false,
+    "PublicKeysAndFingerprintsOmitted": true,
+    "LocalPathsOmitted": true,
+    "RawLogsIncluded": false,
+    "CompanyAddressAndRepositoryOmitted": true
+  }
+}

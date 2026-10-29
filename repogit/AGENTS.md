@@ -1,7 +1,11 @@
-# RepoGit 成品使用入口
+# RepoGit：AI 操作入口
 
-本目录是独立的 RepoGit Windows x64 发行包。先读 README.md、docs/QUICKSTART.md、docs/GITLAB_SETUP.md，按 SHA256.json 校验成品，再运行 .\repogit.exe --version / --help。不要套用父目录 RepoCargo 的 CLI、资源配置或发布协议。
+这是 Windows x64 成品与文档目录，依赖 Git、OpenSSH，不包含业务源码或构建工具。先读 [AI 使用指南](docs/AI_GUIDE.md)，再按 SHA256.json 校验成品并运行 .\repogit.exe --version / --help。
 
-仅包含成品、文档及第三方许可，不包含产品源码或构建工具。使用用户明确提供的项目和 SSH 地址；文档域名均是占位符。只共享设备公钥，不读取、复制或提交个人私钥。status 只读本地，doctor 会联网读取；bind 会修改项目和用户 SSH 配置，push/pull/clone 按用户授权操作。程序不会自动提交、强推或解决历史分叉。
+主线能力：对任意合法 Git 仓库，将已有 HEAD 推送到授权配置指定的仓库与分支。资源类型不限；easyclawdev-next / easyclawdev 只是可选定位辅助，不安装它们也可以使用 RepoGit。不要执行应用构建、部署或自动提交。
 
-真实 GitLab 上已验证 Deploy Key 授权、首次推送、只读克隆/拉取、写入拒绝和撤权后的访问拒绝，见 docs/GITLAB_ACCEPTANCE.md 及同名 JSON 摘要。B 是本机隔离模拟，使用独立密钥、SSH 配置和工作目录；不能将结果改述为真实双机、跨网络或严格分支/标签限制验收通过。公开摘要不包含公司地址、本机路径、设备公钥或原始内部日志。
+配置文件即访问凭据，固定口令 repogit 不提供防泄露保障。使用 access show --config 文件 --json 查看公开摘要，不 cat 配置、不输出私钥、不把配置正文写入对话或日志。设备模式的本机私钥不转交；access 模式只转交专门新建的授权文件，个人 SSH 私钥始终不参与。
+
+使用用户授权的目标和目录。实际仓库根可能是资源的父目录，推送包含整个 HEAD 的历史；意图不清时先核对范围。只推已有提交，不自动提交、强推、合并或修改已有 origin；工作区未提交文件不会上传。doctor 只验证读取。权限由 GitLab 执行，客户端固定分支不构成服务器分支限制。
+
+历史 [GitLab 实测](docs/GITLAB_ACCEPTANCE.md) 仅覆盖其标明的 0.1.0 EXE；B 是本机隔离模拟。新授权文件流程的实际验证范围以 [当前记录](docs/GITLAB_ACCESS_ACCEPTANCE.md) 和 VALIDATION.json 为准，不把历史或模拟结果沿用到新成品。

@@ -1,12 +1,34 @@
 # RepoGit
 
-RepoGit 是面向已有 `.git` 应用的轻量同步工具。客户无需 GitLab 账号，每台电脑通过独立 Deploy Key 访问获准仓库；你的个人私钥不参与客户侧操作。
+RepoGit 0.2.0 是通用 Git 同步工具：**给它一份授权配置和一个合法 Git 仓库，就能推送已有提交。** 应用、智能体、插件和普通项目都可以使用，无需客户 GitLab 账号，个人 SSH 私钥不参与。
 
 一个 Windows EXE 可放在任意位置，依赖 **Git 和 OpenSSH 的 `ssh`、`ssh-keygen` 已加入 PATH**。密钥、SSH 配置不随 EXE 移动。命令默认操作当前目录所属的 Git 项目，也支持在任意位置传入 `--path`。不需要服务器或客户端账号系统。
 
-本目录仅提供 Windows x64 成品与使用文档，不包含产品源码或构建脚本。完整双设备操作步骤见 [从零开始使用](docs/QUICKSTART.md)。所有 gitlab.example.invalid 地址均为占位符，必须替换为自己的项目 SSH 地址。
+GitHub 发行目录仅提供 Windows x64 成品与使用文档，不包含产品源码或构建脚本。原有设备模式的完整步骤见 [从零开始使用](docs/QUICKSTART.md)。所有 gitlab.example.invalid 地址均为占位符，必须替换为自己的项目 SSH 地址。
 
-## 首次使用
+## 推荐：生成一份配置，交给同事和 AI
+
+管理员先准备空的私有 GitLab 项目，并核验 SSH 主机指纹，保存到自己的 `known_hosts`。然后生成独立授权文件：
+
+```powershell
+repogit access create --name "同事甲-项目甲" --repo "git@gitlab.example.invalid:group/project.git" --out "同事甲-项目甲.repogit.json"
+repogit access show --config "同事甲-项目甲.repogit.json"
+```
+
+将输出的公钥添加到项目 Deploy Keys 并授予读写，再把生成的配置文件交给同事。配置是可打开的 UTF-8 JSON，包含仓库、默认 `sync` 分支、公钥、加密私钥和可信主机公钥。**文件即钥匙**：固定口令 `repogit` 由工具自动处理，不提供防泄露保障。每位接收人分别生成凭据，泄露时在 GitLab 撤销对应授权。
+
+同事可直接告诉 AI：“使用 [RepoGit](https://github.com/hawkhai/repocargo/tree/main/repogit) 和这份配置，把指定 Git 仓库推上去。”AI 先读 [操作指南](docs/AI_GUIDE.md)，执行：
+
+```powershell
+repogit access show --config "同事甲-项目甲.repogit.json" --json
+repogit --path "D:\Repos\project" bind --config "同事甲-项目甲.repogit.json"
+repogit --path "D:\Repos\project" doctor
+repogit --path "D:\Repos\project" push
+```
+
+导入时自动解锁，凭据保存在用户应用数据目录，后续无需输入口令。没有已有提交时停止；未提交修改不上传，也不自动创建提交。下载使用 `repogit clone --config "同事甲-项目甲.repogit.json" "D:\Repos\project"`。完整流程与边界见 [授权配置说明](docs/ACCESS_CONFIG.md)。
+
+## 兼容方式：每台电脑本机生成设备密钥
 
 ### 1. 每台客户电脑生成自己的密钥
 
@@ -14,7 +36,7 @@ RepoGit 是面向已有 `.git` 应用的轻量同步工具。客户无需 GitLab
 repogit device init
 ```
 
-按 OpenSSH 提示设置私钥口令；已有密钥不会被覆盖。只把输出的 **`ssh-ed25519 ...` 公钥和指纹**交给管理员，绝不发送私钥。
+在此设备模式下，按 OpenSSH 提示设置私钥口令；已有密钥不会被覆盖。只把输出的 **`ssh-ed25519 ...` 公钥和指纹**交给管理员，本机设备私钥不转交。上述 access 模式使用另行新建的专用交付凭据。
 
 Windows 默认密钥位置：`%LOCALAPPDATA%\repogit\keys\id_ed25519`。可选环境变量只指定路径：
 
@@ -127,7 +149,7 @@ repogit [--path DIR] push | pull | status | doctor
 | `REPOGIT_SSH_CONFIG` | 覆盖 SSH 配置文件位置，主要用于隔离测试；普通 Git 需自行传 `ssh -F`，repogit 会自动指定 |
 | `REPOGIT_SSH` | 指定 OpenSSH 可执行文件的完整路径；默认从 PATH 查找 |
 
-工具不使用 GitLab API 或管理令牌，不自动创建项目，也不读取你的个人私钥。它的绑定信息保存在本地 Git 配置 `repogit.binding`，不会作为项目源码提交。
+工具不使用 GitLab API 或管理令牌，不自动创建项目，也不读取你的个人私钥。它的绑定信息保存在本地 Git 配置 `repogit.binding`，不会作为项目源码提交。导入配置后，`REPOGIT_KEY_FILE` 与绑定身份不一致时明确报错，不静默换密钥。
 
 同一仓库在同一设备只支持一套同步绑定；链接 worktree 共享仓库配置。`status` 会打印绑定仓库、分支及路径，不打印私钥正文。SSH 配置要求 UTF-8；密钥路径避免引号、控制字符、`%`、`$` 等会触发 SSH 展开的字符。
 
@@ -138,6 +160,8 @@ GitLab 强制设备可访问哪些仓库；客户端绑定只负责固定操作�
 停用设备必须撤销它在所有相关项目上的 Deploy Key 授权。撤权不删除已下载代码，也不终止所有已开始的连接。本机管理员仍有能力取得设备私钥；独立设备密钥是为了避免泄露你的个人身份并能逐台撤权。
 
 第一版不承诺 Git LFS、子模块的独立认证或自动同步。不支持任意 SSH 命令、自动解决冲突、自动提交、强推或远程项目创建。
+
+支持普通仓库、linked worktree（`.git` 为文件）和 bare 仓库。Bare 仓库支持绑定、status、doctor、push，没有工作区因此不能 pull。RepoGit 按 Git 解析实际仓库根；资源在父仓库内时会涉及整个仓库历史，不按目录抽取源码。资源识别技能是可选辅助，不影响这些通用能力。
 
 ## 下载与校验
 
@@ -159,6 +183,6 @@ ZIP 内的 `SHA256SUMS.txt` 只记录 EXE；本目录外部校验文件同时记
 
 [release.json](release.json) 记录发行身份；[VALIDATION.json](VALIDATION.json) 与 [验证范围](docs/VALIDATION.md) 记录核验结果。EXE 沿用通过干净构建与全部测试的成品，ZIP 随公开文档与第三方许可一起分发。
 
-2026-10-29 已在真实 GitLab 测试项目验证 Deploy Key 授权、首次推送、只读克隆/拉取、写入拒绝及撤权后的访问拒绝。**B 是本机隔离模拟**，使用独立密钥、SSH 配置和工作目录；未验证真实双机或严格分支/标签保护。见 [GitLab 实测记录](docs/GITLAB_ACCEPTANCE.md) 与 [机器可读摘要](docs/GITLAB_ACCEPTANCE.json)。自己的服务器权限与保护规则仍需按实际环境验收。
+0.1.0 的真实 GitLab 授权、只读和撤权结果见 [历史实测](docs/GITLAB_ACCEPTANCE.md)，**B 是本机隔离模拟**。该记录对应旧 EXE 哈希，不能证明新版本已经实测。0.2.0 授权文件流程的验证范围见 [当前 GitLab 记录](docs/GITLAB_ACCESS_ACCEPTANCE.md)；真实双机和严格分支/标签保护需要另行验收。
 
 第三方组件保留各自许可，见 [第三方声明](THIRD_PARTY_NOTICES.md)。本工具的发行不包含 Git 或 OpenSSH 本体。

@@ -1,82 +1,139 @@
 {
   "Status": "passed",
-  "ValidatedAt": "2026-10-29T18:08:42.1942476+08:00",
-  "EXESHA256": "8104dc005bd13511cd2af02116368bd247b0f1430d55c4d65eb4d92b6bc2adee",
-  "ArchiveSHA256": "8e32369d998c24f98413cd13834960fa64e8d021a9817396c97f312989406f12",
-  "BuildEvidence": {
-    "Status": "passed",
+  "RunId": "20261029T122518083Z-d04a81cf",
+  "StartedAt": "2026-10-29T20:25:18.237972+08:00",
+  "ValidatedAt": "2026-10-29T20:34:53.0291790+08:00",
+  "CleanBuild": true,
+  "Target": "x86_64-pc-windows-msvc",
+  "SourceSHA256": "a4c83108cc71d228469b812b3db52664a036102609cc04c5e5fd03c6f0967f2e",
+  "TestBinary": "EXE extracted from final ZIP",
+  "TestsPassed": 19,
+  "Checks": [
+    {
+      "Step": "gate-contract-tests",
+      "ExitCode": 0
+    },
+    {
+      "Step": "format",
+      "ExitCode": 0
+    },
+    {
+      "Step": "clean-build",
+      "ExitCode": 0
+    },
+    {
+      "Step": "dependency-metadata",
+      "ExitCode": 0
+    },
+    {
+      "Step": "full-tests",
+      "ExitCode": 0
+    },
+    {
+      "Step": "clippy",
+      "ExitCode": 0
+    },
+    {
+      "Step": "cli-version",
+      "ExitCode": 0
+    },
+    {
+      "Step": "cli-help",
+      "ExitCode": 0
+    },
+    {
+      "Step": "final-cli-0",
+      "ExitCode": 0
+    },
+    {
+      "Step": "final-cli-1",
+      "ExitCode": 0
+    },
+    {
+      "Step": "final-cli-2",
+      "ExitCode": 0
+    },
+    {
+      "Step": "final-cli-3",
+      "ExitCode": 0
+    },
+    {
+      "Step": "final-cli-4",
+      "ExitCode": 0
+    },
+    {
+      "Step": "final-cli-5",
+      "ExitCode": 0
+    },
+    {
+      "Step": "final-cli-6",
+      "ExitCode": 0
+    },
+    {
+      "Step": "final-cli-7",
+      "ExitCode": 0
+    },
+    {
+      "Step": "final-cli-8",
+      "ExitCode": 0
+    },
+    {
+      "Step": "final-cli-9",
+      "ExitCode": 0
+    },
+    {
+      "Step": "final-cli-10",
+      "ExitCode": 0
+    },
+    {
+      "Step": "final-cli-11",
+      "ExitCode": 0
+    },
+    {
+      "Step": "final-cli-12",
+      "ExitCode": 0
+    },
+    {
+      "Step": "final-cli-13",
+      "ExitCode": 0
+    }
+  ],
+  "EXESHA256": "98adc2529aef99f78add7ea97f8150420bbbc578f27dfddc972c4884a04e1ced",
+  "Version": "0.2.0",
+  "VerificationScope": "Clean build and complete local tests; real GitLab access-file import, push, clone, fast-forward pull, ordinary Git push, incorrect host-key rejection and revocation verified using this exact EXE. Sender/receiver were simulated on one Windows computer using the same transferred credential.",
+  "HistoricalGitLabAcceptance": {
     "Version": "0.1.0",
-    "CleanBuild": true,
-    "BuildRunId": "20261029T051141243Z-773f2ba9",
-    "BuildValidatedAt": "2026-10-29T13:12:56.85545+08:00",
-    "SourceSHA256": "427b563e229d8c9909414794de5050e2487ee98d5fd1e6d908a7ed8935cddc9b",
-    "EXESHA256": "8104dc005bd13511cd2af02116368bd247b0f1430d55c4d65eb4d92b6bc2adee",
-    "TestsPassed": 10,
-    "BuildChecks": [
-      {
-        "Step": "gate-contract-tests",
-        "ExitCode": 0
-      },
-      {
-        "Step": "format",
-        "ExitCode": 0
-      },
-      {
-        "Step": "clean-build",
-        "ExitCode": 0
-      },
-      {
-        "Step": "full-tests",
-        "ExitCode": 0
-      },
-      {
-        "Step": "clippy",
-        "ExitCode": 0
-      },
-      {
-        "Step": "cli-version",
-        "ExitCode": 0
-      },
-      {
-        "Step": "cli-help",
-        "ExitCode": 0
-      }
-    ],
-    "PackagingContractTestsPassed": 9,
-    "VerificationScope": "Original clean-build pipeline used local Git/SSH transport only. Separate real-service results are linked in GitLabAcceptance."
+    "Report": "docs/GITLAB_ACCEPTANCE.json"
+  },
+  "GitLabAccessAcceptance": {
+    "Status": "passed",
+    "Version": "0.2.0",
+    "TestDate": "2026-10-29",
+    "EXESHA256": "98adc2529aef99f78add7ea97f8150420bbbc578f27dfddc972c4884a04e1ced",
+    "Report": "docs/GITLAB_ACCESS_ACCEPTANCE.json",
+    "Narrative": "docs/GITLAB_ACCESS_ACCEPTANCE.md",
+    "Simulation": "Same Windows computer; separate sender and receiver environments importing one transferred credential",
+    "PhysicalTwoDeviceTested": false,
+    "StrictBranchTagProtectionTested": false
   },
   "DeliveryChecks": {
-    "ExeMatchesTestedBuild": true,
-    "ExeMatchesGitLabTestedBinary": true,
-    "ArchiveExtractedAndAllFilesMatched": true,
-    "ArchiveFileCount": 136,
-    "CliChecks": [
-      "repogit --version",
-      "repogit --help",
-      "repogit device --help",
-      "repogit device init --help",
-      "repogit device show --help",
-      "repogit bind --help",
-      "repogit clone --help",
-      "repogit push --help",
-      "repogit pull --help",
-      "repogit status --help",
-      "repogit doctor --help"
-    ],
-    "HashManifestsMatched": true,
-    "MarkdownLinksResolved": true,
-    "PublicFileScopeChecked": true,
-    "GitLabSummaryRedactionChecked": true
+    "ArchiveFilesMatched": true,
+    "ArchiveFileCount": 140,
+    "CliChecksPassed": 14,
+    "PublicContentsAndLinksChecked": true,
+    "RealServiceEvidenceRedactionChecked": true,
+    "EXEMatchesRealServiceTestedBinary": true
   },
-  "VerificationScope": "Unmodified tested EXE; real GitLab Deploy Key authorization, initial push, read-only clone/pull, write denial and revocation verified. B is isolated on the same computer. Physical two-device, cross-network and strict branch/tag protection tests are not covered.",
-  "GitLabAcceptance": {
-    "Status": "passed",
-    "TestDate": "2026-10-29",
-    "EXESHA256": "8104dc005bd13511cd2af02116368bd247b0f1430d55c4d65eb4d92b6bc2adee",
-    "Report": "docs/GITLAB_ACCEPTANCE.json",
-    "Narrative": "docs/GITLAB_ACCEPTANCE.md",
-    "BIsSameComputerIsolatedSimulation": true,
-    "TwoPhysicalComputersTested": false,
-    "StrictBranchTagProtectionTested": false
-  }
+  "DocumentationEnrichment": {
+    "AfterBuild": true,
+    "EXERecompiled": false,
+    "BuildSourceSHA256": "a4c83108cc71d228469b812b3db52664a036102609cc04c5e5fd03c6f0967f2e",
+    "DocumentationSourceSHA256": "d82518b378bba0e21120f94ac9159806f5691ca07ae8e46ce7c820ac79746467",
+    "ChangedSourcePaths": [
+      "docs/GITLAB_ACCESS_ACCEPTANCE.json",
+      "docs/GITLAB_ACCESS_ACCEPTANCE.md"
+    ],
+    "OnlyRealServiceEvidenceAdded": true
+  },
+  "ArchiveSHA256": "2646c084df64c915b38cb7c86e28633ce4ea9f2e001ae8d74c554e8f82cc95b2"
 }

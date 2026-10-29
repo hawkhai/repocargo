@@ -1,6 +1,6 @@
 {
   "name": "RepoGit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "release_date": "2026-10-29",
   "platform": "windows-x86_64",
   "business_source_included": false,
@@ -8,29 +8,30 @@
     "Git on PATH",
     "OpenSSH ssh and ssh-keygen on PATH"
   ],
+  "build_run_id": "20261029T122518083Z-d04a81cf",
   "artifacts": [
     {
       "file": "repogit.exe",
-      "sha256": "8104dc005bd13511cd2af02116368bd247b0f1430d55c4d65eb4d92b6bc2adee",
-      "size_bytes": 1084416
+      "sha256": "98adc2529aef99f78add7ea97f8150420bbbc578f27dfddc972c4884a04e1ced",
+      "size_bytes": 1214464
     },
     {
       "file": "repogit-windows-x64.zip",
-      "sha256": "8e32369d998c24f98413cd13834960fa64e8d021a9817396c97f312989406f12",
-      "size_bytes": 782376
+      "sha256": "2646c084df64c915b38cb7c86e28633ce4ea9f2e001ae8d74c554e8f82cc95b2",
+      "size_bytes": 843046
     }
   ],
-  "build_run_id": "20261029T051141243Z-773f2ba9",
-  "packaging": "Unmodified GitLab-tested EXE; updated public acceptance documentation and third-party licenses repackaged into ZIP.",
-  "documentation_revision": 2,
-  "gitlab_acceptance": {
+  "packaging": "Clean built EXE with public documentation, licenses and executable checksum. ZIP checksum is supplied outside this archive.",
+  "gitlab_access_acceptance": {
     "Status": "passed",
+    "Version": "0.2.0",
     "TestDate": "2026-10-29",
-    "EXESHA256": "8104dc005bd13511cd2af02116368bd247b0f1430d55c4d65eb4d92b6bc2adee",
-    "Report": "docs/GITLAB_ACCEPTANCE.json",
-    "Narrative": "docs/GITLAB_ACCEPTANCE.md",
-    "BIsSameComputerIsolatedSimulation": true,
-    "TwoPhysicalComputersTested": false,
+    "EXESHA256": "98adc2529aef99f78add7ea97f8150420bbbc578f27dfddc972c4884a04e1ced",
+    "Report": "docs/GITLAB_ACCESS_ACCEPTANCE.json",
+    "Narrative": "docs/GITLAB_ACCESS_ACCEPTANCE.md",
+    "Simulation": "Same Windows computer; separate sender and receiver environments importing one transferred credential",
+    "PhysicalTwoDeviceTested": false,
     "StrictBranchTagProtectionTested": false
-  }
+  },
+  "documentation_revision": 1
 }
