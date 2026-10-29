@@ -6,6 +6,22 @@
 
 也可以提供资源名称，例如在线应用、本地应用、智能体或其他项目。资源识别是辅助能力，**任何合法 Git 仓库都能走相同主流程**。
 
+## Agent 专用入口（0.3.0 起）
+
+优先使用 `repogit-cli.exe`，它独立运行，无需 repogit.exe 陪同。先读 [协议](AGENT_PROTOCOL.md)，或依次运行 `repogit-cli schema`、`repogit-cli schema push`，再执行 `status` 和写操作 `--dry-run`。下文 repogit 的命令也可用 Agent 版同名入口，输出改为单个 JSON 信封；access show 不再需要额外 --json，传入 --json 也兼容。不要沿用 RepoCargo CLI 的 stdout/stderr 约定来猜测 RepoGit Agent 的错误通道。
+
+示例：
+
+```powershell
+repogit-cli -C "D:\Repos\project" bind --config "C:\Credentials\project.repogit.json" --dry-run
+repogit-cli -C "D:\Repos\project" bind --config "C:\Credentials\project.repogit.json"
+repogit-cli -C "D:\Repos\project" status --fields repository,head,dirty,binding
+repogit-cli -C "D:\Repos\project" push --dry-run
+repogit-cli -C "D:\Repos\project" push --timeout-seconds 60
+```
+
+检查退出码和 ok。TIMEOUT、may_have_changed 或 result_unknown 表示需要先核对本地/远程状态，不能认为没有写入，更不能自动强推。只有 push 成功后的远程分支 SHA 核对通过，才返回相应的 remote_verified=true；doctor 成功仍仅验证读取。
+
 ## 下载并核验工具
 
 从上述发行目录获取 repogit.exe 和 SHA256.json，固定到同一个 Git 提交下载，按清单核对哈希，再运行 `repogit --version`、`repogit --help`。需要 0.2.0 或更新版本。发行目录没有业务源码或构建工具，客户不需要 Cargo。已有匹配且校验通过的版本可复用；不替用户关闭系统防护。

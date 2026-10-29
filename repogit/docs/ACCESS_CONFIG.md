@@ -1,6 +1,6 @@
 # 一份授权配置交给同事
 
-RepoGit 0.2.0。主线只需要 Git 仓库，不限制应用、智能体或项目类型。生成端和使用端都需要 Windows x64、Git、OpenSSH 的 ssh/ssh-keygen，客户不需要 Rust 或 GitLab 账号。
+授权文件格式 1 从 RepoGit 0.2.0 起提供，当前版本 0.3.0 保持兼容。主线只需要 Git 仓库，不限制应用、智能体或项目类型。生成端和使用端都需要 Windows x64、Git、OpenSSH 的 ssh/ssh-keygen，客户不需要 Rust 或 GitLab 账号。Agent 可将下文命令的程序名换为 repogit-cli，其 JSON、预演与错误协议见 [Agent CLI](AGENT_PROTOCOL.md)；创建输出文件已存在时不会另建或覆盖密钥。
 
 ## 管理员生成、授权、交付
 

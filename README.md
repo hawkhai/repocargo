@@ -90,7 +90,7 @@ gitbigfileftp 继续作为独立工具保留 JSON 配置及旧入口。RepoCargo
 
 ## RepoGit：无需客户账号的 Git 同步
 
-[RepoGit 成品与文档](repogit/README.md) 使用每台设备独立的 GitLab Deploy Key，同步已有 Git 项目。提供 [Windows x64 EXE](repogit/repogit.exe)、[便携 ZIP](repogit/repogit-windows-x64.zip)、[双设备完整操作步骤](repogit/docs/QUICKSTART.md) 和 [管理员授权说明](repogit/docs/GITLAB_SETUP.md)。需要 Git 与 OpenSSH；请使用 `repogit/` 内独立的校验清单和验证记录。
+[RepoGit 成品与文档](repogit/README.md) 使用 GitLab Deploy Key 或可转交的授权配置，同步已有 Git 项目。RepoGit 0.3.0 提供 [人类版 EXE](repogit/repogit.exe)、[独立 Agent CLI](repogit/repogit-cli.exe)、[Agent 协议](repogit/docs/AGENT_PROTOCOL.md)、[便携 ZIP](repogit/repogit-windows-x64.zip)、[完整操作步骤](repogit/docs/QUICKSTART.md) 和 [管理员授权说明](repogit/docs/GITLAB_SETUP.md)。需要 Git 与 OpenSSH；请使用 `repogit/` 内独立的校验清单和验证记录。
 
 ## English
 

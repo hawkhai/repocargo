@@ -1,13 +1,13 @@
 {
   "Status": "passed",
-  "RunId": "20261029T122518083Z-d04a81cf",
-  "StartedAt": "2026-10-29T20:25:18.237972+08:00",
-  "ValidatedAt": "2026-10-29T20:34:53.0291790+08:00",
+  "RunId": "20261029T130731176Z-3216ecaf",
+  "StartedAt": "2026-10-29T21:07:31.196244+08:00",
+  "ValidatedAt": "2026-10-29T21:19:09.7074981+08:00",
   "CleanBuild": true,
   "Target": "x86_64-pc-windows-msvc",
-  "SourceSHA256": "a4c83108cc71d228469b812b3db52664a036102609cc04c5e5fd03c6f0967f2e",
+  "SourceSHA256": "c1afe6f635817c75a0ef36dd2888c084da8d20a1c79c42eeaec10717a3ab9c2c",
   "TestBinary": "EXE extracted from final ZIP",
-  "TestsPassed": 19,
+  "TestsPassed": 27,
   "Checks": [
     {
       "Step": "gate-contract-tests",
@@ -96,44 +96,75 @@
     {
       "Step": "final-cli-13",
       "ExitCode": 0
+    },
+    {
+      "Step": "final-agent-14",
+      "ExitCode": 0
+    },
+    {
+      "Step": "final-agent-15",
+      "ExitCode": 0
+    },
+    {
+      "Step": "final-agent-16",
+      "ExitCode": 0
+    },
+    {
+      "Step": "final-agent-17",
+      "ExitCode": 0
+    },
+    {
+      "Step": "final-agent-18",
+      "ExitCode": 0
+    },
+    {
+      "Step": "final-agent-19",
+      "ExitCode": 0
     }
   ],
-  "EXESHA256": "98adc2529aef99f78add7ea97f8150420bbbc578f27dfddc972c4884a04e1ced",
-  "Version": "0.2.0",
-  "VerificationScope": "Clean build and complete local tests; real GitLab access-file import, push, clone, fast-forward pull, ordinary Git push, incorrect host-key rejection and revocation verified using this exact EXE. Sender/receiver were simulated on one Windows computer using the same transferred credential.",
+  "EXESHA256": "cb0056d007a8a9a79d736468bf3c0ccf71f558a77e15991219f71722de75d9a0",
+  "AgentEXESHA256": "b3cb47a306a8a771573a1ecda22c4b2aa8aa77a9ddeba86e4e0cb12c25915cc7",
+  "Version": "0.3.0",
+  "VerificationScope": "Both extracted release EXEs passed complete local tests. This exact Agent EXE separately passed real GitLab structured clone, previews, HEAD guard, push with remote SHA check, dirty-file exclusion, fast-forward pull, revoked-key and wrong-host typed errors. Same-computer simulation, not two physical computers.",
   "HistoricalGitLabAcceptance": {
-    "Version": "0.1.0",
-    "Report": "docs/GITLAB_ACCEPTANCE.json"
+    "Report": "docs/GITLAB_ACCEPTANCE.json",
+    "Version": "0.1.0"
   },
-  "GitLabAccessAcceptance": {
+  "HistoricalGitLabAccessAcceptance": {
+    "Report": "docs/GITLAB_ACCESS_ACCEPTANCE.md",
+    "Version": "0.2.0"
+  },
+  "AgentGitLabAcceptance": {
     "Status": "passed",
-    "Version": "0.2.0",
+    "Version": "0.3.0",
+    "ProtocolSchemaVersion": 1,
     "TestDate": "2026-10-29",
-    "EXESHA256": "98adc2529aef99f78add7ea97f8150420bbbc578f27dfddc972c4884a04e1ced",
-    "Report": "docs/GITLAB_ACCESS_ACCEPTANCE.json",
-    "Narrative": "docs/GITLAB_ACCESS_ACCEPTANCE.md",
-    "Simulation": "Same Windows computer; separate sender and receiver environments importing one transferred credential",
+    "AgentEXESHA256": "b3cb47a306a8a771573a1ecda22c4b2aa8aa77a9ddeba86e4e0cb12c25915cc7",
+    "Report": "docs/AGENT_VALIDATION.json",
+    "Narrative": "docs/AGENT_VALIDATION.md",
+    "Simulation": "Same Windows computer; two isolated working copies; explicitly authorized existing key",
     "PhysicalTwoDeviceTested": false,
     "StrictBranchTagProtectionTested": false
   },
   "DeliveryChecks": {
     "ArchiveFilesMatched": true,
-    "ArchiveFileCount": 140,
-    "CliChecksPassed": 14,
+    "ArchiveFileCount": 144,
+    "CliChecksPassed": 20,
     "PublicContentsAndLinksChecked": true,
-    "RealServiceEvidenceRedactionChecked": true,
-    "EXEMatchesRealServiceTestedBinary": true
+    "AgentRealServiceEvidenceRedactionChecked": true,
+    "AgentEXEMatchesRealServiceTestedBinary": true
   },
   "DocumentationEnrichment": {
     "AfterBuild": true,
-    "EXERecompiled": false,
-    "BuildSourceSHA256": "a4c83108cc71d228469b812b3db52664a036102609cc04c5e5fd03c6f0967f2e",
-    "DocumentationSourceSHA256": "d82518b378bba0e21120f94ac9159806f5691ca07ae8e46ce7c820ac79746467",
+    "ExecutablesRecompiled": false,
+    "BuildSourceSHA256": "c1afe6f635817c75a0ef36dd2888c084da8d20a1c79c42eeaec10717a3ab9c2c",
+    "DocumentationSourceSHA256": "4a348e1f800cdb628dac77cea779a7011baba393d224cb043114f26ecee968a0",
     "ChangedSourcePaths": [
-      "docs/GITLAB_ACCESS_ACCEPTANCE.json",
-      "docs/GITLAB_ACCESS_ACCEPTANCE.md"
+      "docs/AGENT_PROTOCOL.md",
+      "docs/AGENT_VALIDATION.json",
+      "docs/AGENT_VALIDATION.md"
     ],
-    "OnlyRealServiceEvidenceAdded": true
+    "Scope": "Real-service evidence and explicit relative-path documentation; no code or test changes"
   },
-  "ArchiveSHA256": "2646c084df64c915b38cb7c86e28633ce4ea9f2e001ae8d74c554e8f82cc95b2"
+  "ArchiveSHA256": "1f68d8caa881dfbdca7b22dc96a7b9b2bf1732f62ebc230524e9aa9e5944e8fd"
 }

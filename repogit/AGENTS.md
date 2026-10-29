@@ -1,6 +1,8 @@
 # RepoGit：AI 操作入口
 
-这是 Windows x64 成品与文档目录，依赖 Git、OpenSSH，不包含业务源码或构建工具。先读 [AI 使用指南](docs/AI_GUIDE.md)，再按 SHA256.json 校验成品并运行 .\repogit.exe --version / --help。
+这是 Windows x64 成品与文档目录，依赖 Git、OpenSSH，不包含业务源码或构建工具。Agent 优先使用独立的 repogit-cli.exe，先读 [命令行协议](docs/AGENT_PROTOCOL.md)，按 SHA256.json 校验两个成品。repogit.exe 继续服务人类终端；两者不互相依赖。
+
+repogit-cli 默认成功/失败都输出一个 JSON 到 stdout，退出非零时检查 error.code、hint、execution_state；stderr 默认空，verbose 只给进程计数，不暴露原始日志。先 status，再写操作 --dry-run，明确范围后执行。预演不联网、不证明远程授权；超时或 may_have_changed/result_unknown 时先核对状态，不盲目重试。无需 --yes，没有删除或 force 入口。
 
 主线能力：对任意合法 Git 仓库，将已有 HEAD 推送到授权配置指定的仓库与分支。资源类型不限；easyclawdev-next / easyclawdev 只是可选定位辅助，不安装它们也可以使用 RepoGit。不要执行应用构建、部署或自动提交。
 

@@ -1,0 +1,46 @@
+{
+  "Product": "RepoGit Agent CLI",
+  "Version": "0.3.0",
+  "SchemaVersion": 1,
+  "AgentEXESHA256": "b3cb47a306a8a771573a1ecda22c4b2aa8aa77a9ddeba86e4e0cb12c25915cc7",
+  "Status": "passed",
+  "TestDate": "2026-10-29",
+  "Service": "Real GitLab private test project; actual address omitted",
+  "Simulation": "Same Windows computer; two isolated working copies using an explicitly authorized existing test key",
+  "Checks": {
+    "StructuredPushAndVerification": {
+      "Passed": true,
+      "RemoteSHACompared": true,
+      "HEADPreconditionChecked": true,
+      "UncommittedContentExcluded": true
+    },
+    "CloneAndPull": {
+      "Passed": true,
+      "DoctorScopeReadOnly": true,
+      "DirtyPullRefused": true
+    },
+    "RealAuthorizationAndHostErrors": {
+      "Passed": true,
+      "RevokedKeyCode": "ACCESS_DENIED",
+      "HostMismatchCode": "HOST_KEY_REJECTED",
+      "RawLogsInJSON": false
+    },
+    "ProtocolChannels": {
+      "Passed": true,
+      "DefaultStderrEmpty": true,
+      "ProcessExitMatchesEnvelope": true,
+      "SingleJSONParsed": true
+    }
+  },
+  "NotCovered": [
+    "Two physical computers or separate networks",
+    "Strict branch/tag restrictions",
+    "Git LFS and submodules",
+    "Remote rollback after client timeout"
+  ],
+  "Redaction": {
+    "PrivateKeysAndRawLogsIncluded": false,
+    "LocalPathsOmitted": true,
+    "CompanyAndRepositoryAddressesOmitted": true
+  }
+}

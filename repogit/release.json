@@ -1,6 +1,6 @@
 {
   "name": "RepoGit",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "release_date": "2026-10-29",
   "platform": "windows-x86_64",
   "business_source_included": false,
@@ -8,28 +8,35 @@
     "Git on PATH",
     "OpenSSH ssh and ssh-keygen on PATH"
   ],
-  "build_run_id": "20261029T122518083Z-d04a81cf",
+  "build_run_id": "20261029T130731176Z-3216ecaf",
+  "agent_protocol_schema_version": 1,
   "artifacts": [
     {
       "file": "repogit.exe",
-      "sha256": "98adc2529aef99f78add7ea97f8150420bbbc578f27dfddc972c4884a04e1ced",
-      "size_bytes": 1214464
+      "sha256": "cb0056d007a8a9a79d736468bf3c0ccf71f558a77e15991219f71722de75d9a0",
+      "size_bytes": 1216000
+    },
+    {
+      "file": "repogit-cli.exe",
+      "sha256": "b3cb47a306a8a771573a1ecda22c4b2aa8aa77a9ddeba86e4e0cb12c25915cc7",
+      "size_bytes": 1516032
     },
     {
       "file": "repogit-windows-x64.zip",
-      "sha256": "2646c084df64c915b38cb7c86e28633ce4ea9f2e001ae8d74c554e8f82cc95b2",
-      "size_bytes": 843046
+      "sha256": "1f68d8caa881dfbdca7b22dc96a7b9b2bf1732f62ebc230524e9aa9e5944e8fd",
+      "size_bytes": 1522059
     }
   ],
-  "packaging": "Clean built EXE with public documentation, licenses and executable checksum. ZIP checksum is supplied outside this archive.",
-  "gitlab_access_acceptance": {
+  "packaging": "Two standalone clean-built executables with public documentation, licenses and executable checksums. ZIP checksum is supplied outside this archive.",
+  "agent_gitlab_acceptance": {
     "Status": "passed",
-    "Version": "0.2.0",
+    "Version": "0.3.0",
+    "ProtocolSchemaVersion": 1,
     "TestDate": "2026-10-29",
-    "EXESHA256": "98adc2529aef99f78add7ea97f8150420bbbc578f27dfddc972c4884a04e1ced",
-    "Report": "docs/GITLAB_ACCESS_ACCEPTANCE.json",
-    "Narrative": "docs/GITLAB_ACCESS_ACCEPTANCE.md",
-    "Simulation": "Same Windows computer; separate sender and receiver environments importing one transferred credential",
+    "AgentEXESHA256": "b3cb47a306a8a771573a1ecda22c4b2aa8aa77a9ddeba86e4e0cb12c25915cc7",
+    "Report": "docs/AGENT_VALIDATION.json",
+    "Narrative": "docs/AGENT_VALIDATION.md",
+    "Simulation": "Same Windows computer; two isolated working copies; explicitly authorized existing key",
     "PhysicalTwoDeviceTested": false,
     "StrictBranchTagProtectionTested": false
   },

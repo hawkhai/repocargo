@@ -1,10 +1,29 @@
 # RepoGit
 
-RepoGit 0.2.0 是通用 Git 同步工具：**给它一份授权配置和一个合法 Git 仓库，就能推送已有提交。** 应用、智能体、插件和普通项目都可以使用，无需客户 GitLab 账号，个人 SSH 私钥不参与。
+RepoGit 0.3.0 是通用 Git 同步工具：**给它一份授权配置和一个合法 Git 仓库，就能推送已有提交。** 应用、智能体、插件和普通项目都可以使用，无需客户 GitLab 账号，个人 SSH 私钥不参与。
 
 一个 Windows EXE 可放在任意位置，依赖 **Git 和 OpenSSH 的 `ssh`、`ssh-keygen` 已加入 PATH**。密钥、SSH 配置不随 EXE 移动。命令默认操作当前目录所属的 Git 项目，也支持在任意位置传入 `--path`。不需要服务器或客户端账号系统。
 
 GitHub 发行目录仅提供 Windows x64 成品与使用文档，不包含产品源码或构建脚本。原有设备模式的完整步骤见 [从零开始使用](docs/QUICKSTART.md)。所有 gitlab.example.invalid 地址均为占位符，必须替换为自己的项目 SSH 地址。
+
+## 两个独立程序
+
+| 程序 | 主要使用者 | 输出与执行方式 |
+| --- | --- | --- |
+| `repogit.exe` | 人在终端中操作 | 保留文本、Git 进度和原有命令习惯 |
+| `repogit-cli.exe` | Codex、脚本及其他 Agent | 默认单个 JSON 信封，禁止交互，支持离线 schema、本地预演、分页、字段筛选和执行超时 |
+
+两个 EXE 共享 Git/SSH 和凭据逻辑，都可单独放在任意目录运行，不互相转调或要求放在同一目录。Agent 优先读 [命令行协议](docs/AGENT_PROTOCOL.md)，再按需查询：
+
+```powershell
+repogit-cli schema
+repogit-cli schema push
+repogit-cli -C "D:\Repos\project" status --fields repository,head,dirty,binding
+repogit-cli -C "D:\Repos\project" push --dry-run
+repogit-cli -C "D:\Repos\project" push --timeout-seconds 60
+```
+
+`-C` 是 Agent 版对 `--path` 的 Git 风格简写。`--dry-run` 只读本地，不代表 GitLab 已授权。Agent 版成功和失败都把 JSON 写 stdout，必须同时检查进程退出码、`ok` 与 `execution_state`；`--help`、`--version` 是离线文本输出。
 
 ## 推荐：生成一份配置，交给同事和 AI
 
